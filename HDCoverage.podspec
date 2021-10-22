@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/erduoniba/hdcoverage.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'HDCoverage/Classes/**/*'
+  s.source_files = 'HDCoverage/**/*'
   
   # s.resource_bundles = {
   #   'HDCoverage' => ['HDCoverage/Assets/*.png']
