@@ -1,7 +1,7 @@
 {
   "name": "HDCoverage",
   "version": "0.1.0",
-  "summary": "A short description of HDCoverage.",
+  "summary": "Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/denglibing/HDCoverage",
   "license": {
