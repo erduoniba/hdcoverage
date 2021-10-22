@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HDCoverage_Tests' do
+  pod 'HDCoverage', :path => '../'
+  
+  
+end
