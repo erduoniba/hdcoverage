@@ -1,0 +1,6 @@
+framework module HDCoverage {
+  umbrella header "HDCoverage-umbrella.h"
+
+  export *
+  module * { export * }
+}
