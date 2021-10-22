@@ -20,6 +20,24 @@ it, simply add the following line to your Podfile:
 pod 'HDCoverage'
 ```
 
+
+
+**Use**
+
+Build Phases add `New Run Script Phase`
+
+```
+sh ${PODS_ROOT}/HDCoverage/HDCoverage/hdcoverage_env.sh 'HDCoverageDemo'
+```
+
+![image-20211022143825535](./Img/image-20211022143825535.png)
+
+
+
+Xcode Build, Build Settings will add `-profile-generate -profile-coverage-mapping` to `Other Swift Flgs` (Swift Code Coverage Setting), add `-fprofile-instr-generate -fcoverage-mapping` to `Other C Flags` and `Other C++ Flags` (OC Code Coverage Setting)
+
+![image-20211022144208211](./Img/image-20211022144208211.png)
+
 ## Author
 
 denglibing, denglibing3@jd.com
