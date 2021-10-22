@@ -8,12 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDCoverage'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic'
   s.description      = <<-DESC
                       Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic
                       0.1.0: add sh and ruby files
-                      0.1.0: release
+                      1.0.0: release
+                      1.0.1: move files
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/hdcoverage'
