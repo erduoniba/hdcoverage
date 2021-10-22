@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                       0.1.0: add sh and ruby files
                        DESC
 
-  s.homepage         = 'https://github.com/denglibing/HDCoverage'
+  s.homepage         = 'https://github.com/erduoniba/hdcoverage'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'denglibing' => 'denglibing3@jd.com' }
   s.source           = { :git => 'https://github.com/denglibing/HDCoverage.git', :tag => s.version.to_s }
