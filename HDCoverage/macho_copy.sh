@@ -1,15 +1,20 @@
-echo "macho_copy begin"
+echo "==== macho & profdata.sh copy begin ===="
 
-machoFiles=HDCoverageResult/MachOFiles
+resulePath=$SRCROOT/CoverageResult
+machoFiles=$resulePath/MachOFiles
 if [[ -d $machoFiles ]]; then
-	echo "$machoFiles 存在"
+    echo "$machoFiles 存在"
 else
-	mkdir $machoFiles
-	echo "$machoFiles 不存在，已经创建"
+    mkdir CoverageResult
+    mkdir CoverageResult/MachOFiles
+    echo "$machoFiles 不存在，已经创建"
 fi
 
 echo "ipa_path: $CODESIGNING_FOLDER_PATH"
 
 cp -r $CODESIGNING_FOLDER_PATH $machoFiles
+
+scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cp -r  ${scripts}/profdata.sh $resulePath
 
 echo "macho_copy end"
