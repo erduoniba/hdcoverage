@@ -5,7 +5,7 @@ function main {
 
 	echo "git commit success"
 	git tag -m $1 $2
-	git push --tags
+	git push orgin $2
 
 	if [ $? -eq 0 ]; then
 		echo "git push tag success"
