@@ -8,12 +8,7 @@ function main {
 	git tag -m $1 $2
 	git push orgin $2
 
-	if [ $? -eq 0 ]; then
-		echo "git push tag success"
-		pod trunk push HDCoverage.podspec --allow-warnings
-	else
-		echo "git push tag faild"
-	fi
+	pod trunk push HDCoverage.podspec --allow-warnings
 }
 
 main $1 $2
