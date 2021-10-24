@@ -9,6 +9,8 @@ function main {
 
     judgeResultFolder
     disposeProfrawFiles
+    
+    open $result
 }
 
 function judgeResultFolder {
