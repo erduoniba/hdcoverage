@@ -4,7 +4,6 @@ function main {
 	git commit -m $1
 	git push orgin master
 
-	echo "git commit success"
 	git tag -m $1 $2
 	git push orgin $2
 
