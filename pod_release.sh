@@ -12,8 +12,10 @@ function main {
 	git push orgin master
 
 	if [ $? -eq 0 ]; then
+		echo "push success"
 		pushTagAndPodTrunk $1 $2
 	else
+		echo "push faild"
 		pushTagAndPodTrunk $1 $2
 	fi
 
