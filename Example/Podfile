@@ -4,3 +4,19 @@ target 'HDCoverage_Tests' do
   
   
 end
+
+# 如果失效，可以使用 pod install --clean-install
+# 实现post_install Hooks
+#post_install do |installer|
+#  # 1. 遍历项目中所有target
+#  installer.pods_project.targets.each do |target|
+#    puts "target: %s" % target
+#    # 2. 遍历build_configurations
+#    target.build_configurations.each do |config|
+#      # 3. 修改build_settings中的GCC_GENERATE_TEST_COVERAGE_FILES和GCC_INSTRUMENT_PROGRAM_FLOW_ARCS
+#      puts "config.build_settings: %s" % config.build_settings
+#      config.build_settings['GCC_GENERATE_TEST_COVERAGE_FILES'] = 'YES'
+#      config.build_settings['GCC_INSTRUMENT_PROGRAM_FLOW_ARCS'] = 'YES'
+#    end
+#  end
+#end

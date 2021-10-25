@@ -14,19 +14,19 @@ function main {
 }
 
 function judgeResultFolder {
-    if [[ -d $machoFiles ]]; then
-        echo "$machoFiles 存在"
+    if [[ -d $resulePath ]]; then
+        echo "$resulePath exist."
     else
-        mkdir CoverageResult
-        mkdir CoverageResult/MachOFiles
-        echo "$machoFiles 不存在，已经创建"
+        mkdir $resulePath
+        mkdir $machoFiles
+        echo "$machoFiles not found，already created."
     fi
     
     if [[ -d $profrawFiles ]]; then
-        echo "$profrawFiles 存在"
+        echo "$profrawFiles exist."
     else
         mkdir $profrawFiles
-        echo "$profrawFiles 不存在，已经创建"
+        echo "$profrawFiles not found，already created."
     fi
 }
 
@@ -37,7 +37,6 @@ function copyIpaAndShellFile {
 
     scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     cp -r  ${scripts}/parse_profraw.sh $resulePath
-    mkdir CoverageResult
 
     echo "macho_copy end"
 }

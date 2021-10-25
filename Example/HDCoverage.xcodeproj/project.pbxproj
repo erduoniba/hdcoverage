@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		135BEC1C329FE61EF43EBF30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		197D5A2D650985347C869527 /* Pods_HDCoverage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDCoverage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D963EF1E97461120270A69C /* HDCoverage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HDCoverage.podspec; path = ../HDCoverage.podspec; sourceTree = "<group>"; };
+		1D963EF1E97461120270A69C /* HDCoverage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HDCoverage.podspec; path = ../HDCoverage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACE51AFB9204008FA782 /* HDCoverage_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDCoverage_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -219,8 +219,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* HDCoverage_Tests */,
 				D9F066F727253A3100E77D7A /* HDCoverageDemo */,
+				607FACE41AFB9204008FA782 /* HDCoverage_Tests */,
 			);
 		};
 /* End PBXProject section */
