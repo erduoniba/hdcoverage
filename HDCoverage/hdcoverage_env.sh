@@ -5,4 +5,4 @@ scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 sh ${scripts}/macho_copy.sh
 
 # 插入代码覆盖率需要Xcode BuildSettings 的指令
-ruby ${scripts}/coverage_buildsettings.ruby $PROJECT_FILE_PATH
+ruby ${scripts}/coverage_buildsettings.rb $PROJECT_FILE_PATH
