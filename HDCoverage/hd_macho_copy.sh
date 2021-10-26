@@ -1,5 +1,5 @@
 function main {
-    echo "==== macho & parse_profraw.sh copy begin ===="
+    echo "==== macho & hd_parse_profraw.sh copy begin ===="
 
     resulePath=$SRCROOT/CoverageResult
     machoFiles=$resulePath/MachOFiles
@@ -10,7 +10,7 @@ function main {
     
     open $resulePath
     
-    echo "==== macho & parse_profraw.sh copy end ===="
+    echo "==== macho & hd_parse_profraw.sh copy end ===="
 }
 
 function judgeResultFolder {
@@ -36,7 +36,14 @@ function copyIpaAndShellFile {
     cp -r $CODESIGNING_FOLDER_PATH $machoFiles
 
     scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-    cp -r  ${scripts}/parse_profraw.sh $resulePath
+    parseProfrawPath="$resulePath/hd_parse_profraw.sh"
+    
+    if [[ -d $parseProfrawPath ]]; then
+        echo "$parseProfrawPath exist."
+    else
+        cp -r ${scripts}/hd_parse_profraw.sh $resulePath
+        echo "$parseProfrawPath not found，already copyed."
+    fi
 
     echo "macho_copy end"
 }
