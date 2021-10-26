@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDCoverage'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic'
   s.description      = <<-DESC
                       Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic
