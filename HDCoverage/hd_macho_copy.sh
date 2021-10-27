@@ -1,5 +1,10 @@
+function hecho {
+    echo "<<== $1"
+}
+
 function main {
-    echo "==== macho & hd_parse_profraw.sh copy begin ===="
+    echo "\n"
+    hecho "macho & hd_parse_profraw.sh copy begin"
 
     resulePath=$SRCROOT/CoverageResult
     machoFiles=$resulePath/MachOFiles
@@ -10,28 +15,29 @@ function main {
     
     open $resulePath
     
-    echo "==== macho & hd_parse_profraw.sh copy end ===="
+    hecho "macho & hd_parse_profraw.sh copy end"
+    echo "\n"
 }
 
 function judgeResultFolder {
     if [[ -d $resulePath ]]; then
-        echo "$resulePath exist."
+        hecho "$resulePath exist."
     else
         mkdir $resulePath
         mkdir $machoFiles
-        echo "$machoFiles not found，already created."
+        hecho "$machoFiles not found，already created."
     fi
     
     if [[ -d $profrawFiles ]]; then
-        echo "$profrawFiles exist."
+        hecho "$profrawFiles exist."
     else
         mkdir $profrawFiles
-        echo "$profrawFiles not found，already created."
+        hecho "$profrawFiles not found，already created."
     fi
 }
 
 function copyIpaAndShellFile {
-    echo "ipa_path: $CODESIGNING_FOLDER_PATH"
+    hecho "ipa_path: $CODESIGNING_FOLDER_PATH"
 
     cp -r $CODESIGNING_FOLDER_PATH $machoFiles
 
@@ -39,13 +45,13 @@ function copyIpaAndShellFile {
     parseProfrawPath="$resulePath/hd_parse_profraw.sh"
     
     if [[ -d $parseProfrawPath ]]; then
-        echo "$parseProfrawPath exist."
+            hecho "$parseProfrawPath exist."
     else
         cp -r ${scripts}/hd_parse_profraw.sh $resulePath
-        echo "$parseProfrawPath not found，already copyed."
+            hecho "$parseProfrawPath not found，already copyed."
     fi
 
-    echo "macho_copy end"
+    hecho "macho_copy end"
 }
 
 main

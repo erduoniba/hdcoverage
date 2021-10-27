@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDCoverage'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic'
   s.description      = <<-DESC
                       Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
                       1.0.3: optimize macho_copy.sh (auto open code coverage result folder)
                       1.0.4: optimize parse_profraw.sh (auto open code coverage result folder)
                       1.0.5: optimize hdcoverage_env.sh (auto get project_path)
+                      1.0.8: adaptor jd biu env
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/hdcoverage'

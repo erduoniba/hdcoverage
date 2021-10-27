@@ -6,14 +6,6 @@ project_path = ARGV[0]
 puts 'project_path is %s' % project_path
 project = Xcodeproj::Project.open(project_path)
 
-# 查询有多少个target
-project.targets.each do |target|
-    puts target.name
-end
-
-puts "===="
-puts project.targets[0]
-
 # 遍历配置
 project.targets.each do |target|
     target.build_configurations.each do |config|
