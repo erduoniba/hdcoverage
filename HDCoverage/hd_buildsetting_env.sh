@@ -13,7 +13,10 @@ function disposeScheme {
     PRODUCT_BUNDLE_IDENTIFIER=`PlistBuddy -c "Print :objects:$1:buildSettings:PRODUCT_BUNDLE_IDENTIFIER" "$pbxproj"`
         name=`PlistBuddy -c "Print :objects:$1:name" "$pbxproj"`
     hecho "will change $PRODUCT_BUNDLE_IDENTIFIER-$name OTHER_SWIFT_FLAGS"
+    swiftCoverageValue="-profile-generate -profile-coverage-mapping"
+    ocCoverageValue="-fprofile-instr-generate -fcoverage-mapping"
     PlistBuddy -c "Set :objects:$1:buildSettings:OTHER_SWIFT_FLAGS $coverageValue" "$pbxproj"
+    PlistBuddy -c "Set :objects:$1:buildSettings:OTHER_LDFLAGS $ocCoverageValue" "$pbxproj"
 }
 
 function disposeTarget {
@@ -41,7 +44,6 @@ function disposePBXcodej {
     targets=(`echo $targetList`)
     hecho "targets: ${targets[*]}"
 
-    coverageValue="-profile-generate -profile-coverage-mapping"
     for targetID in $(echo ${targets[*]})
     do
         echo "\n"

@@ -13,6 +13,7 @@ project.targets.each do |target|
     build_settings = config.build_settings
     #build_settings是一个哈希，里面是一个个配置
     build_settings["OTHER_SWIFT_FLAGS"] = "-profile-generate -profile-coverage-mapping"
+    build_settings["OTHER_LDFLAGS"] = "-fprofile-instr-generate -fcoverage-mapping"
     end
 end
 

@@ -1,5 +1,5 @@
 PODS:
-  - HDCoverage (1.0.7)
+  - HDCoverage (1.0.8)
 
 DEPENDENCIES:
   - HDCoverage (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HDCoverage: 83d529fa3a8a34ce4009c75b49289bab27998a64
+  HDCoverage: fa77ad2d30c740979b14eb009009fcfcf48cc6b6
 
 PODFILE CHECKSUM: b51f83002dc0456be6d9065bbb756e6c72eda347
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDCoverage'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic'
   s.description      = <<-DESC
                       Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
                       1.0.4: optimize parse_profraw.sh (auto open code coverage result folder)
                       1.0.5: optimize hdcoverage_env.sh (auto get project_path)
                       1.0.8: adaptor jd biu env
+                      1.0.9: add $OTHER_LDFLAGS value
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/hdcoverage'
@@ -27,7 +28,7 @@ Pod::Spec.new do |s|
   s.author           = { 'denglibing' => 'denglibing3@jd.com' }
   s.source           = { :git => 'https://github.com/erduoniba/hdcoverage.git', :tag => s.version.to_s }
 
-  s.source_files = 'HDCoverage/**/*'
+  s.source_files = 'HDCoverage/**/*.{sh,rb}'
   
   # s.resource_bundles = {
   #   'HDCoverage' => ['HDCoverage/Assets/*.png']
