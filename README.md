@@ -27,7 +27,7 @@ pod 'HDCoverage'
 Build Phases add `New Run Script Phase`
 
 ```
-sh ${PODS_ROOT}/HDCoverage/HDCoverage/hdcoverage_env.sh 'HDCoverageDemo'
+"${PODS_ROOT}/HDCoverage/HDCoverage/hdcoverage_env.sh"
 ```
 
 ![image-20211022143825535](./Img/image-20211022143825535.png)
