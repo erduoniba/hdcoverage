@@ -7,4 +7,8 @@ module CocoapodsHdcoverage
     Pod::HooksManager.register('cocoapods-hdcoverage', :post_install) do |context|
         p "cocoapods-hdcoverage hook post_install"
     end
+
+    def method_name
+    	
+    end
 end

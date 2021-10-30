@@ -7,16 +7,59 @@ end
 
 # 如果失效，可以使用 pod install --clean-install
 # 实现post_install Hooks
-#post_install do |installer|
-#  # 1. 遍历项目中所有target
-#  installer.pods_project.targets.each do |target|
-#    puts "target: %s" % target
-#    # 2. 遍历build_configurations
-#    target.build_configurations.each do |config|
-#      # 3. 修改build_settings中的GCC_GENERATE_TEST_COVERAGE_FILES和GCC_INSTRUMENT_PROGRAM_FLOW_ARCS
-#      puts "config.build_settings: %s" % config.build_settings
-#      config.build_settings['GCC_GENERATE_TEST_COVERAGE_FILES'] = 'YES'
-#      config.build_settings['GCC_INSTRUMENT_PROGRAM_FLOW_ARCS'] = 'YES'
-#    end
-#  end
-#end
+# 需要收集Code Coverage的模块
+ntargets = Array['AFNetworking']
+
+require 'xcodeproj'
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            if(config.name <=> 'Release') == 0
+              config.build_settings['OTHER_CFLAGS'] = '$(inherited)'
+              config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited)'
+              config.build_settings['OTHER_LDFLAGS'] = '$(inherited)'
+                ntargets.each do |ntarget|
+                    if(ntarget <=> target.name) == 0
+                      config.build_settings['OTHER_CFLAGS'] = '$(inherited) -fprofile-instr-generate -fcoverage-mapping'
+                      config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited) -profile-generate -profile-coverage-mapping'
+                      config.build_settings['OTHER_LDFLAGS'] = '$(inherited) -fprofile-instr-generate'
+                        break
+                    end
+                end
+            else
+              config.build_settings['OTHER_CFLAGS'] = '$(inherited)'
+              config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited)'
+              config.build_settings['OTHER_LDFLAGS'] = '$(inherited)'
+            end
+        end
+    end
+
+    # 修改主工程
+    project_path = './HDCoverage.xcodeproj'
+    project = Xcodeproj::Project.open(project_path)
+    puts project
+    project.targets.each do |target|
+        if(target.name <=> 'HDCoverageDemo') == 0
+            target.build_configurations.each do |config|
+                if ((config.name <=> 'Release') == 0 || (config.name <=> 'Debug') == 0)
+                    # 设置预编译变量CODECOVERAGE
+                    config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = '$(inherited) CODECOVERAGE=1'
+                    # OC代码覆盖率插桩配置
+                    config.build_settings['OTHER_CFLAGS'] = '$(inherited) -fprofile-instr-generate -fcoverage-mapping'
+                    # Swift代码覆盖率插桩配置
+                    config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited) -profile-generate -profile-coverage-mapping'
+                    # 采集代码覆盖率配置
+                    config.build_settings['OTHER_LDFLAGS'] = '$(inherited) -fprofile-instr-generate'
+                    # Release需要设置，不然无法解析代码覆盖率
+                    config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
+                else
+                  config.build_settings['OTHER_CFLAGS'] = '$(inherited)'
+                  config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited)'
+                  config.build_settings['OTHER_LDFLAGS'] = '$(inherited)'
+                  config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = ''
+                end
+            end
+        end
+    end
+    project.save()
+end

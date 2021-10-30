@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "HDGatherCoverage.h"
 
 FOUNDATION_EXPORT double HDCoverageVersionNumber;
 FOUNDATION_EXPORT const unsigned char HDCoverageVersionString[];
