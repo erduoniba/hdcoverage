@@ -109,7 +109,7 @@
                                         <rect key="frame" x="160" y="0.0" width="44" height="30"/>
                                         <state key="normal" title="Case3"/>
                                         <connections>
-                                            <action selector="frameworkOCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aC-aM-5O7"/>
+                                            <action selector="frameworkOCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9u-l7-8mg"/>
                                         </connections>
                                     </button>
                                 </subviews>

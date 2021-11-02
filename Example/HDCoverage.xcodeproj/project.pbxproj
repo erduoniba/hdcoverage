@@ -20,11 +20,11 @@
 		D90061A6272D3A4900F7B46D /* HDOCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D90061A2272D3A4900F7B46D /* HDOCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D90061A7272D3A4900F7B46D /* HDOCFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = D90061A3272D3A4900F7B46D /* HDOCFramework.m */; };
 		D90061A8272D3A4900F7B46D /* HDSwiftFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90061A4272D3A4900F7B46D /* HDSwiftFramework.swift */; };
+		D90067A127311B3500F7B46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F0670327253A3400E77D7A /* Assets.xcassets */; };
 		D9F066FB27253A3100E77D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F066FA27253A3100E77D7A /* AppDelegate.swift */; };
 		D9F066FD27253A3100E77D7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F066FC27253A3100E77D7A /* SceneDelegate.swift */; };
 		D9F066FF27253A3100E77D7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F066FE27253A3100E77D7A /* ViewController.swift */; };
 		D9F0670227253A3100E77D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F0670027253A3100E77D7A /* Main.storyboard */; };
-		D9F0670427253A3400E77D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F0670327253A3400E77D7A /* Assets.xcassets */; };
 		D9F0670727253A3400E77D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F0670527253A3400E77D7A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -443,7 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F0670727253A3400E77D7A /* LaunchScreen.storyboard in Resources */,
-				D9F0670427253A3400E77D7A /* Assets.xcassets in Resources */,
+				D90067A127311B3500F7B46D /* Assets.xcassets in Resources */,
 				D9F0670227253A3100E77D7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
