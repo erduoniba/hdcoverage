@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: "1")
         imageView.image = UIImage(named: "off_demo")
         view.addSubview(imageView)
+        view.insertSubview(imageView, at: 0)
     }
 
     

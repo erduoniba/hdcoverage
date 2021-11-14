@@ -10,4 +10,4 @@ int main() {
 }
 
 // xcrun llvm-cov report ./foo -instr-profile=foo.profdata
-xcrun llvm-cov report ./foo -instr-profile=foo.profdata 
+//xcrun llvm-cov report ./foo -instr-profile=foo.profdata 

@@ -1,0 +1,18 @@
+Counters:
+  main:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+  printTest:
+    Hash: 0x03e0e16a652906a0
+    Counters: 4
+    Function count: 3
+  add:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+Instrumentation level: Front-end
+Functions shown: 3
+Total functions: 3
+Maximum function count: 3
+Maximum internal block count: 2

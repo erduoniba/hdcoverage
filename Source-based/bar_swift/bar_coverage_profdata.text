@@ -1,0 +1,30 @@
+Counters:
+  bar.swift:$s12bar_coverage3addyS2i_SitF:
+    Hash: 0x0000000000000000
+    Counters: 1
+    Function count: 1
+  bar.swift:__tlcd_line:24:1:
+    Hash: 0x0000000000000000
+    Counters: 1
+    Function count: 1
+  bar.swift:__tlcd_line:23:1:
+    Hash: 0x0000000000000000
+    Counters: 1
+    Function count: 1
+  bar.swift:$s12bar_coverage4mainyySiF:
+    Hash: 0x0000000000000000
+    Counters: 4
+    Function count: 3
+  bar.swift:__tlcd_line:25:1:
+    Hash: 0x0000000000000000
+    Counters: 1
+    Function count: 1
+  bar.swift:__tlcd_line:26:1:
+    Hash: 0x0000000000000000
+    Counters: 1
+    Function count: 1
+Instrumentation level: Front-end
+Functions shown: 6
+Total functions: 6
+Maximum function count: 3
+Maximum internal block count: 2

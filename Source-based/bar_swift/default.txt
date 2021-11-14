@@ -1,0 +1,27 @@
+    1|func add(_ x: Int, _ y: Int) -> Int {
+    2|    return x + y
+    3|}
+    4|
+    5|func main(_ x: Int) {
+    6|    print("begin")
+    7|    if ( x > 100) {
+    8|        print("input > 100")
+    9|    }
+   10|    else if ( x > 60) {
+   11|        print(" 60 < input <= 100")
+   12|    }
+   13|    else if ( x > 0) {
+   14|        print(" 0 < input <= 60")
+   15|    }
+   16|    else {
+   17|        print(" input <= 0")
+   18|    }
+   19|    print("end")
+   20|}
+   21|
+   22|
+   23|main(12)
+   24|main(8)
+   25|main(0)
+   26|print("\(add(1, 2))")
+

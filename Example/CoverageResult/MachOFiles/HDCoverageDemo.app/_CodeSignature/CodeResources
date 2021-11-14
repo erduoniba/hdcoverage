@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Assets.car</key>
-		<data>
-		ZAH57Cqj1JAvYSCB7nNs+pJgO34=
-		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		BHrIzm+Vv197UbKb4sQqR/WGfKw=
+		ThM3I1n3P+bi3oih17WTdV1q5qk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		25BjZ9OJ6L/d+Hcsh2wVLhW/42U=
+		5VE9u5f1wlcIfvcqGMhQqQjYBPU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		29LXYSAztnzfbqLIuX1teOAw2WQ=
+		LZ67b5FBvze/3uxvYlgaw3TvbKo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,11 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		Ysa/+uNUqAXljygkok8sAgqvr7M=
+		fCTUfIPnxDfSxDBxns4XhteJ+oY=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/HDCoverageFramework</key>
 		<data>
-		OYQb001gO2HHp7DhQxNXmboLapg=
+		XG/wvxq7LjHMNRGylHM1TO4Ih0o=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/Info.plist</key>
 		<data>
@@ -42,7 +38,7 @@
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		OYQYhUq+uPgZl9S+xEZBtn6MsxY=
+		FJtrXLOQFQYjHYWOz/sremzfKig=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -50,7 +46,7 @@
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		qRVXE5gF1udpn7b2IwT3qLOr63M=
+		Ktl/Xd8sd+l8FljN3IADDiDU8JI=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -62,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4pKB8hJNG4ZrVrVKTbA5XIayofA=
+		5zCWszuONgzpuXOfOzYxG00v/EA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -71,18 +67,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8EdCJ1hUBHSA4rA7miVFBYc/t/Ort5VOqFJUFn3rmeM=
-			</data>
-		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SR+/FUiht+dr3XWbIyRSW/1Ewl2ad4bDuxmwd3mSevc=
+			ZEB3J5ZkwLNdtIH9z30fGS6NKl13vudiqWQ4/pGfVew=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -96,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6mFYNXfEuXjBv+n81debh+8X1uQPObEjq8Mvh1xLNfw=
+			wb8kH7vXIY/qzO7JZZ8sxALOizHhcPFcnhtwiEOe+XE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVoLoPyYMyAKwL8fEW6CPdVnekwuOpA89kD64agBNho=
+			RHmJfJySkTiuzeskeBc9+o40mXsg6K6It/y+iBOoXJg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -117,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vwj+3p4xoQemSSHOUotbTUykiPbrbvu2o6wayjdU42w=
+			XD290cCKoQNy+9hfDNPFE4QK8zNZxV5izeZCEC2xSEA=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/HDCoverageFramework</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zCrtqCtgNxnc7Gg3E91uR9yBNOgl0bYKnsjAWbdkmws=
+			PgqJJs+yeRfYL2LLaHiWu35clT4qGGsGFsJQKTHyVeg=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/Info.plist</key>
@@ -138,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			crvc9pg4hdC4BhIzBZHJIulH2PXN0G2FbVKVHpsSpds=
+			hRctU3jaJZo4ZNNHnQVSgjgwcsW8L3FdjdaDJvw7JfM=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeRequirements</key>
@@ -152,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TEHyYrkao2VzpXc9u/UPWJVXQwprrkcZJMNoQ+FeKew=
+			B3bDF+xPMbZgsr/xIRdPC0vNFrxlwUl6qEjXQFA9560=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeResources</key>
