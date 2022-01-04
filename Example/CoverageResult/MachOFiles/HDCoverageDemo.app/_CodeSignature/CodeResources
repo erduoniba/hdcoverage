@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		o4OSONH5/k28ay5q4sur6LNDuto=
+		tG+0NJBTDJU1pGyTkthn/3SEV7s=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		GZHx8TzEqnKGxr9Lk+FsDP1aPXE=
+		U0x8EM0781fCPb62BbZIXKeDlZ4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		LxPl1KJ0DzsqEpNQyv0GgDjUZzI=
+		wHB3dTN+VLnOHALu4xWjxg+yW5Q=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		iXCJt685/AyF7FiPIFgKPC9Xl/k=
+		jPnSC+ZOEPmG2AQzujqB/PlioS0=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/HDCoverageFramework</key>
 		<data>
-		9aqW+c1HTGRiRXNtHlPn3VOx+PU=
+		Nxd8KRC6lmCOvn90SpxuIS3Offc=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/Info.plist</key>
 		<data>
-		s5lUJCVEj8f0UoHzOJf1iLkyOuE=
+		o3X43SM9xAm+nO6TtwLAc/dW95g=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		qlnpDBbt7kWZN02pMdBoP9tHCQw=
+		7fBuv4gXY79TxqLZcKvnNv87Yu4=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		YYt4uNrSagYxhzZ+QHJUn2KgT44=
+		LpiMZM6EUXLcbVhrf3klrV3UUU0=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		TC+X6UDcfw/3XV0Y6uOmj5XgMmM=
+		Db2Ue63WoOb3vDwCFNkTl71JAHs=
 		</data>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5zCWszuONgzpuXOfOzYxG00v/EA=
+		JlToh04FYTb0QArSsOwyjQ93Rrk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x1AHOAtIOkJfuHz1V17sW6wq/GuZHKzwyXnlJsObmcY=
+			eGOOA9v7cm8vfK6MRci5Cka6ymlf1C3AyF6Gqr5XqPo=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZIPbRL+oDXZQ7Beiv4Kr1w2/eVm9BfD3g6CTaDzGfKg=
+			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			noKeq2mCv4rPBdAitXg4OAlNoG4AMA5EPoW49gGIQAg=
+			yXBsRHLsZvhkpe9DHcVIPF81Zy4sKRFERkOcfbama4c=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qu5MdZpfxR3v4owKdFl+i37PXyUziQdadC8uNCtQnpk=
+			5hDt/QCKk4mrV9dtia7YnDLomcKxKCePSpRM0vOIO4M=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/HDCoverageFramework</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8cvLgkGjgzMP9W4JNExuNtGgPQBZiEFTBmmCcLJGuh4=
+			T6fh7psRTlLHW5j8YAKs9PinOpwADqRYIkMw+vZcdjY=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			En6/fgWOOFmdKHX+1t/jb6Dz7L7Ec362IRrfjNASFyI=
+			+AF7jpXSxEZoOk+Um92B9wcA+NsaoDsxO24nx7J/Aaw=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6LaSuAjj+JopiPu3PPyDWU4EvMNrz5U0VTXHqUEHoAs=
+			Y5TNgQ6iNWtvegOqzShSGGalTJztkK4cqOgC13T58RI=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeRequirements</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B8ACRbr2/ktilLskR1YBB0bbsfBEBHFAQBlCor2XOaM=
+			6gUCV6xEeui447GDK1nDM+XSj0iu4d2dI5Dtawi34fY=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V/BBDlawoX6JBwi7lfM1pdKNS/57CK3oHxPf8TH7zc8=
+			GW0BUpdLgQ1yWBqSKq1/mwr9VoLNGC+60VKV44VwawE=
 			</data>
 		</dict>
 		<key>Frameworks/HDCoverageFramework.framework/_CodeSignature/CodeSignature</key>

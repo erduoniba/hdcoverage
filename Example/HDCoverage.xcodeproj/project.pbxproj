@@ -11,7 +11,7 @@
 		8EC6A8D4CDA0C95EAF211531 /* Pods_HDCoverage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197D5A2D650985347C869527 /* Pods_HDCoverage_Tests.framework */; };
 		D9006153272D373800F7B46D /* HDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9006151272D373800F7B46D /* HDSwift.swift */; };
 		D9006154272D373800F7B46D /* HDOC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9006152272D373800F7B46D /* HDOC.m */; };
-		D9006159272D373E00F7B46D /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9006158272D373E00F7B46D /* Tools.swift */; };
+		D9006159272D373E00F7B46D /* HDCoverageTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9006158272D373E00F7B46D /* HDCoverageTools.swift */; };
 		D900618A272D3A3800F7B46D /* HDCoverageFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9006181272D3A3800F7B46D /* HDCoverageFramework.framework */; };
 		D9006191272D3A3800F7B46D /* HDCoverageFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9006190272D3A3800F7B46D /* HDCoverageFrameworkTests.m */; };
 		D9006193272D3A3800F7B46D /* HDCoverageFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D9006183272D3A3800F7B46D /* HDCoverageFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,7 +78,7 @@
 		D9006150272D373800F7B46D /* HDOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDOC.h; sourceTree = "<group>"; };
 		D9006151272D373800F7B46D /* HDSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDSwift.swift; sourceTree = "<group>"; };
 		D9006152272D373800F7B46D /* HDOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDOC.m; sourceTree = "<group>"; };
-		D9006158272D373E00F7B46D /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		D9006158272D373E00F7B46D /* HDCoverageTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDCoverageTools.swift; sourceTree = "<group>"; };
 		D900615E272D37C100F7B46D /* InstrProfiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrProfiling.h; sourceTree = "<group>"; };
 		D9006171272D38C600F7B46D /* HDCoverageDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDCoverageDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9006181272D3A3800F7B46D /* HDCoverageFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDCoverageFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D900615E272D37C100F7B46D /* InstrProfiling.h */,
-				D9006158272D373E00F7B46D /* Tools.swift */,
+				D9006158272D373E00F7B46D /* HDCoverageTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -544,7 +544,7 @@
 				D9006154272D373800F7B46D /* HDOC.m in Sources */,
 				D9F066FF27253A3100E77D7A /* ViewController.swift in Sources */,
 				D9006153272D373800F7B46D /* HDSwift.swift in Sources */,
-				D9006159272D373E00F7B46D /* Tools.swift in Sources */,
+				D9006159272D373E00F7B46D /* HDCoverageTools.swift in Sources */,
 				D9F066FB27253A3100E77D7A /* AppDelegate.swift in Sources */,
 				D9F066FD27253A3100E77D7A /* SceneDelegate.swift in Sources */,
 			);

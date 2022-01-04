@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BA94632387660C1B5B39C7D7A34C1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0E75C43DD1D18E27EB3BC50C1689A1B6 /* Pods-HDCoverage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BC39EC1A6236084D4D36EB7C4F8B1 /* Pods-HDCoverage_Tests-dummy.m */; };
 		17BC5122A7F909B9E17B9CCD25BB91B7 /* hd_parse_profraw.sh in Sources */ = {isa = PBXBuildFile; fileRef = FF2EA8702CA024FB3F706439FAE8BF05 /* hd_parse_profraw.sh */; };
 		1CCFCB1E804BEB1666C09A8F62D50292 /* hd_coverage_env.sh in Sources */ = {isa = PBXBuildFile; fileRef = C9513EB644EB85E3D6C6553DA48A6461 /* hd_coverage_env.sh */; };
-		1E43E5BE91850B291DA8262690DBB1CA /* Pods-HDCoverage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECAEA46A6159230124CFEE6E840A15FC /* Pods-HDCoverage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EDA898BC9163332D82AE00DB2DC86C9 /* HDCoverage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF634802C80F521F17AB8D214AA3956 /* HDCoverage-dummy.m */; };
-		25E24BD09719925CD28AB24CBFADA06F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2C8422CAB07FC5C74A535C7E0073A36C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		2F1DB41EC715CD28E56206BC7D0B1965 /* hd_buildsetting_env.sh in Sources */ = {isa = PBXBuildFile; fileRef = 081C0D29DA9F5C5A595BF43886855B1A /* hd_buildsetting_env.sh */; };
-		BED8E63F0A9FF0428908354C1B1AC6DD /* Pods-HDCoverage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BC39EC1A6236084D4D36EB7C4F8B1 /* Pods-HDCoverage_Tests-dummy.m */; };
+		635EE334B0323600B1B0F8D0439DBCA6 /* Pods-HDCoverage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECAEA46A6159230124CFEE6E840A15FC /* Pods-HDCoverage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		743F58DC64A4F54C8F9F8F951E21A90C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D81683DDD4617929D790C3E8925C58FA /* hd_macho_copy.sh in Sources */ = {isa = PBXBuildFile; fileRef = FFA0F49B4AB719AF3465AA4B894E2F6C /* hd_macho_copy.sh */; };
 		F814DCFC10EAA74E656134A149D5D3BA /* HDCoverage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0ACD67F8B3FEDE8E4D4673E83475E0 /* HDCoverage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8DB00D33A293801A185795C36D30FDB /* hd_coverage_buildsettings.rb in Sources */ = {isa = PBXBuildFile; fileRef = B6815F6D4626F1EF91F31EDAE1909660 /* hd_coverage_buildsettings.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B184B78E62C34B5F07F627E0D86AC539 /* PBXContainerItemProxy */ = {
+		BF38E48F91B62E2F22FF50492619B1CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -34,13 +34,13 @@
 		081C0D29DA9F5C5A595BF43886855B1A /* hd_buildsetting_env.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = hd_buildsetting_env.sh; path = HDCoverage/hd_buildsetting_env.sh; sourceTree = "<group>"; };
 		0CA50B1A925D205C3C79AE3AA86DE84B /* Pods-HDCoverage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HDCoverage_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1DF266398F45998532B2EAADC37EF3DC /* Pods-HDCoverage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HDCoverage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4857AE11F28BA85152C4C1451D24D457 /* Pods_HDCoverage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HDCoverage_Tests.framework; path = "Pods-HDCoverage_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC6F3D8D5E374885A076C876C05D3A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4DCD613414A5DD65FD53A22A96B8F3B1 /* HDCoverage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HDCoverage-prefix.pch"; sourceTree = "<group>"; };
 		536F7B34928633DD8F04FC80D5CE432A /* Pods-HDCoverage_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HDCoverage_Tests-Info.plist"; sourceTree = "<group>"; };
 		5EC49F99D5BFE531588BF7E0F6F137A2 /* HDCoverage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HDCoverage.xcconfig; sourceTree = "<group>"; };
 		60CFAE8EC027FC319099779619D6B79E /* Pods-HDCoverage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HDCoverage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		995897A689A9471E2E2A7D2E9A43DA5E /* HDCoverage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HDCoverage.framework; path = HDCoverage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2AA75ADBD12B85BC5A2E1939770187 /* Pods-HDCoverage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HDCoverage_Tests.modulemap"; sourceTree = "<group>"; };
 		9AF634802C80F521F17AB8D214AA3956 /* HDCoverage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HDCoverage-dummy.m"; sourceTree = "<group>"; };
@@ -61,11 +61,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		74212CCC5D181123177D1ED66E7662AC /* Frameworks */ = {
+		2A1D6582A504C5F21EEC2BC28B58B0ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA94632387660C1B5B39C7D7A34C1B6 /* Foundation.framework in Frameworks */,
+				2C8422CAB07FC5C74A535C7E0073A36C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25E24BD09719925CD28AB24CBFADA06F /* Foundation.framework in Frameworks */,
+				743F58DC64A4F54C8F9F8F951E21A90C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,14 +120,6 @@
 			path = "Target Support Files/Pods-HDCoverage_Tests";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		73531D8F6BEBA4D54D9696DEA675FF27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +161,14 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +183,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,11 +199,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEA3873B4F6EE963FBD075A7A11B09E4 /* Headers */ = {
+		A98E5A72BD41F6155052BB67D4F8CD58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E43E5BE91850B291DA8262690DBB1CA /* Pods-HDCoverage_Tests-umbrella.h in Headers */,
+				635EE334B0323600B1B0F8D0439DBCA6 /* Pods-HDCoverage_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +230,17 @@
 		};
 		E8A5EDF2FD6FF8305D05314027A5FABD /* Pods-HDCoverage_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DA92BCD8EB2D6159B68ABCD6EA6407D /* Build configuration list for PBXNativeTarget "Pods-HDCoverage_Tests" */;
+			buildConfigurationList = 3483F6D6D0FBFCDF3E49C3004C7042BB /* Build configuration list for PBXNativeTarget "Pods-HDCoverage_Tests" */;
 			buildPhases = (
-				AEA3873B4F6EE963FBD075A7A11B09E4 /* Headers */,
-				547B25BF0FC96168F53D8DE0FD27075A /* Sources */,
-				74212CCC5D181123177D1ED66E7662AC /* Frameworks */,
-				E5E3E8172D96C0FCEE99E2BDA70B96C0 /* Resources */,
+				A98E5A72BD41F6155052BB67D4F8CD58 /* Headers */,
+				647A2CD83A0965E6A27675DED93C34A5 /* Sources */,
+				2A1D6582A504C5F21EEC2BC28B58B0ED /* Frameworks */,
+				C186EBD07572CB390C325C7CA7EEBFEE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B82BD1E6B6BD0286726D0F50802170CE /* PBXTargetDependency */,
+				E3A40120595EA013BF3FFFE0E489E465 /* PBXTargetDependency */,
 			);
 			name = "Pods-HDCoverage_Tests";
 			productName = "Pods-HDCoverage_Tests";
@@ -253,8 +253,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -283,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5E3E8172D96C0FCEE99E2BDA70B96C0 /* Resources */ = {
+		C186EBD07572CB390C325C7CA7EEBFEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,31 +306,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		547B25BF0FC96168F53D8DE0FD27075A /* Sources */ = {
+		647A2CD83A0965E6A27675DED93C34A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED8E63F0A9FF0428908354C1B1AC6DD /* Pods-HDCoverage_Tests-dummy.m in Sources */,
+				0E75C43DD1D18E27EB3BC50C1689A1B6 /* Pods-HDCoverage_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B82BD1E6B6BD0286726D0F50802170CE /* PBXTargetDependency */ = {
+		E3A40120595EA013BF3FFFE0E489E465 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HDCoverage;
 			target = E024818D1DD0C4BDB0A0F17F474B9BFD /* HDCoverage */;
-			targetProxy = B184B78E62C34B5F07F627E0D86AC539 /* PBXContainerItemProxy */;
+			targetProxy = BF38E48F91B62E2F22FF50492619B1CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		9B356C3DD5202A186871BF518F9B03A5 /* Release */ = {
+		46535105C0C87867AAF112E6B069ECA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC49F99D5BFE531588BF7E0F6F137A2 /* HDCoverage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HDCoverage/HDCoverage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HDCoverage/HDCoverage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HDCoverage/HDCoverage.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = HDCoverage;
+				PRODUCT_NAME = HDCoverage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE8EDE8F7D5715D70606F7B9734D78C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BCD94A0D8EB8CFC0F31BA1D4A19CD5A /* Pods-HDCoverage_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -361,7 +397,7 @@
 			};
 			name = Release;
 		};
-		9CF072E58B697F3F1DF026EB3E332DDD /* Release */ = {
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,7 +423,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -422,7 +457,7 @@
 			};
 			name = Release;
 		};
-		A3C702068EEE81C5AF350F4CBA8C4B4F /* Debug */ = {
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,7 +483,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -487,10 +521,11 @@
 			};
 			name = Debug;
 		};
-		A434DA6351EB3F628E5A5E62EDC1C963 /* Release */ = {
+		CBFF89AADBE46481FD19BF12C4B9B066 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EC49F99D5BFE531588BF7E0F6F137A2 /* HDCoverage.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -515,17 +550,17 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		C28F64EA5E79F2624821BE2C91B94681 /* Debug */ = {
+		D65A8FBF9837987E40456F7348C4D3C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60CFAE8EC027FC319099779619D6B79E /* Pods-HDCoverage_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -555,47 +590,14 @@
 			};
 			name = Debug;
 		};
-		E77A420828DFD285DD54084F013D6DBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EC49F99D5BFE531588BF7E0F6F137A2 /* HDCoverage.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HDCoverage/HDCoverage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HDCoverage/HDCoverage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HDCoverage/HDCoverage.modulemap";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_MODULE_NAME = HDCoverage;
-				PRODUCT_NAME = HDCoverage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DA92BCD8EB2D6159B68ABCD6EA6407D /* Build configuration list for PBXNativeTarget "Pods-HDCoverage_Tests" */ = {
+		3483F6D6D0FBFCDF3E49C3004C7042BB /* Build configuration list for PBXNativeTarget "Pods-HDCoverage_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C28F64EA5E79F2624821BE2C91B94681 /* Debug */,
-				9B356C3DD5202A186871BF518F9B03A5 /* Release */,
+				D65A8FBF9837987E40456F7348C4D3C6 /* Debug */,
+				AE8EDE8F7D5715D70606F7B9734D78C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -603,8 +605,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3C702068EEE81C5AF350F4CBA8C4B4F /* Debug */,
-				9CF072E58B697F3F1DF026EB3E332DDD /* Release */,
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -612,8 +614,8 @@
 		9108AE258E83E512B2615DFA054937A4 /* Build configuration list for PBXNativeTarget "HDCoverage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E77A420828DFD285DD54084F013D6DBF /* Debug */,
-				A434DA6351EB3F628E5A5E62EDC1C963 /* Release */,
+				CBFF89AADBE46481FD19BF12C4B9B066 /* Debug */,
+				46535105C0C87867AAF112E6B069ECA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
