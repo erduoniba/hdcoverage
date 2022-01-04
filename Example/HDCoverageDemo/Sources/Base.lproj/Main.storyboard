@@ -148,13 +148,13 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pods(OC)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srl-rV-NMy">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pods(OC)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srl-rV-NMy">
                                 <rect key="frame" x="169.5" y="473.5" width="75" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="yKI-1h-vIj">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="yKI-1h-vIj">
                                 <rect key="frame" x="105" y="502.5" width="204" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs3-F1-YxG">
@@ -181,13 +181,13 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pods(Swift)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsr-Zh-0S4">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pods(Swift)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsr-Zh-0S4">
                                 <rect key="frame" x="162.5" y="562.5" width="89" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="HlE-AY-yss">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="HlE-AY-yss">
                                 <rect key="frame" x="105" y="593" width="204" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPP-mO-EjF">
@@ -214,6 +214,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退到后台，查看日志，找到profraw文件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3do-77-WZU">
+                                <rect key="frame" x="56.5" y="722" width="301" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rz8-lM-5K6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -233,6 +242,8 @@
                             <constraint firstItem="90G-Gm-6pg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WuG-mP-hbM"/>
                             <constraint firstItem="Uqv-Ez-zwk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bAw-H5-ubx"/>
                             <constraint firstItem="lcw-pO-Fln" firstAttribute="top" secondItem="r1W-zQ-o1q" secondAttribute="bottom" constant="10" id="bqF-o5-TUw"/>
+                            <constraint firstItem="3do-77-WZU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dhT-Lk-4oM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3do-77-WZU" secondAttribute="bottom" constant="120" id="gNv-Wh-jj2"/>
                             <constraint firstItem="yKI-1h-vIj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hBt-2q-HjX"/>
                             <constraint firstItem="KN6-Oc-cP8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="ieF-wa-JcU"/>
                             <constraint firstItem="uW9-2W-NFI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qbb-Un-jmB"/>
@@ -247,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="122"/>
+            <point key="canvasLocation" x="47.826086956521742" y="121.875"/>
         </scene>
     </scenes>
     <resources>
