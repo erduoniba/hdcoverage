@@ -383,7 +383,7 @@ LH:20
 end_of_record
 ```
 
-如下是 `info`  文件的关键字解读：
+如下是 `info`  文件的关键字解读，可以参考学习下：
 
 ```sh
 SF: <absolute path to the source file> 									# 文件的绝对路径
@@ -488,7 +488,7 @@ $ tree -L 2
 
 点击 `Filename` 区域的 某一个类可以查看具体的信息：
 
-![image-20220105181920701](.Img/coverage_gather4.png)
+![image-20220105181920701](./Img/coverage_gather4.png)
 
 结合前面的代码提交和上面的可视化，本次代码改动共计 7 行，执行测试后，执行了 6 行，行代码覆盖率为 `85.7%`  。
 
