@@ -246,7 +246,7 @@ $ tree -L 3
 
 5.5、查看：打开 `CoverageResult/HDCoverageDemo/index.html` 即可得到本次测试的代码覆盖率情况：
 
-![image-20220105000818911](/Users/denglibing/HDProject/iOSProject/SProject/hdcoverage/Img/coverage_result1.png)
+![image-20220105000818911](./Img/coverage_result1.png)
 
 点击某一个 `Filename区域` 可以查看详情，例如点击 `HDOCFramework.m `:
 
