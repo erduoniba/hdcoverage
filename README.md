@@ -120,6 +120,7 @@ class HDCoverageTools: NSObject {
     static var shared = HDCoverageTools()
  
     // 注意：动态库是需要单独注册，并且需要在动态库中执行__llvm_profile_write_file()
+    // 
     func registerCoverage(moduleName: String) {
         let name = "\(moduleName).profraw"
         print("registerCoverage, moduleName: \(moduleName)")
@@ -253,6 +254,16 @@ $ tree -L 3
 ![image-20220105001017130](./Img/coverage_result2.png)
 
 可以看出，`tag == 3` 的代码行数并没有执行到，这正和上面测试的  `"Framework(OC)-Case1/Case2"` 符合。
+
+
+
+## 小结
+
+全量代码覆盖率可以帮助开发者聚焦变动代码的逻辑缺陷，从而更好地避免线上问题。这里更多的是讲述基于 `Swift & Objective-C` 工程的 **全量代码覆盖率** 的方案，没有原理，只有简单的流程。中途尝试过多个方案，最终依靠 `Cocoapods` 能力将自动化脚本赋能出去。
+
+但是实际开发过程，不可能每次都去关注 全量代码覆盖率，下一篇继续介绍 [增量代码覆盖率](./Coverage_Gather)
+
+
 
 ## 参考
 

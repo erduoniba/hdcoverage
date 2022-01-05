@@ -28,7 +28,14 @@ public struct HDSwiftFramework {
             print("frameworkSwiftAction: 1")
         }
         else if (tag == 2) {
+            print("frameworkSwiftAction: new line")
             print("frameworkSwiftAction: 2")
+            if (arc4random() % 2 == 0) {
+                print("frameworkSwiftAction: arc4random() %% 2 = 0")
+            }
+            else {
+                print("frameworkSwiftAction: arc4random() %% 2 = 1")
+            }
         }
         else if (tag == 3) {
             print("frameworkSwiftAction: 3")

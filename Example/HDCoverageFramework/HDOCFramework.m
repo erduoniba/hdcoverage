@@ -17,7 +17,14 @@
         NSLog(@"frameworkOCAction: %d", 2);
     }
     else if (tag == 3) {
+        NSLog(@"frameworkOCAction: new line");
         NSLog(@"frameworkOCAction: %d", 3);
+        if (random() % 2 == 0) {
+            NSLog(@"frameworkOCAction: new line random() %% 2 = 0");
+        }
+        else {
+            NSLog(@"frameworkOCAction: new line random() %% 2 = 1");
+        }
     }
     NSDictionary * envir = [[NSProcessInfo processInfo] environment];
     NSLog(@"envir : %@", envir);
