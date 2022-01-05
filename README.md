@@ -15,7 +15,7 @@
 
 ## 使用
 
-**1、安装：**通过 [CocoaPods](https://cocoapods.org) 进行安装，在你的 Podfile 文件添加如下代码：
+**1、安装：** 通过 [CocoaPods](https://cocoapods.org) 进行安装，在你的 Podfile 文件添加如下代码：
 
 ```ruby
 pod 'HDCoverage'
@@ -23,7 +23,7 @@ pod 'HDCoverage'
 
 然后 `pod install` 安装下载相关脚本文件。
 
-**2、关联脚本：**在项目的 `Xcode` 的 `Build Phases` 添加新的脚本（`New Run Script Phase`）（App在Build会执行该脚本）:
+**2、关联脚本：** 在项目的 `Xcode` 的 `Build Phases` 添加新的脚本（`New Run Script Phase`）（App在Build会执行该脚本）:
 
 ```sh
 "${PODS_ROOT}/HDCoverage/HDCoverage/hd_coverage_env.sh"
@@ -94,7 +94,7 @@ post_install do |installer|
 end
 ```
 
-**4、代码执行数据收集：**使用 `GCC` 无法满足 同时兼容 `Swift ` 和 `Objective-C` ，所以这里是基于 `LLVM` 进行，[官网文档](https://clang.llvm.org/docs/SourceBasedCodeCoverage.html) 。也可以参考笔者翻译的 [Source-based Code Coverage](https://blog.csdn.net/u012390519/article/details/121096466) ，完整详细的教程可以看 [Source-based Code Coverage for Swift Step by Step](https://nycode-jn.medium.com/source-based-code-coverage-for-swift-step-by-step-3df3c44c28d9)。
+**4、代码执行数据收集：** 使用 `GCC` 无法满足 同时兼容 `Swift ` 和 `Objective-C` ，所以这里是基于 `LLVM` 进行，[官网文档](https://clang.llvm.org/docs/SourceBasedCodeCoverage.html) 。也可以参考笔者翻译的 [Source-based Code Coverage](https://blog.csdn.net/u012390519/article/details/121096466) ，完整详细的教程可以看 [Source-based Code Coverage for Swift Step by Step](https://nycode-jn.medium.com/source-based-code-coverage-for-swift-step-by-step-3df3c44c28d9)。
 
 4.1、首先在工程中申明 `LLVM` 几个关键的函数：
 
