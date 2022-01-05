@@ -1,0 +1,71 @@
+diff --git a/Coverage_Gather.md b/Coverage_Gather.md
+new file mode 100644
+index 0000000..2774839
+--- /dev/null
++++ b/Coverage_Gather.md
+@@ -0,0 +1,22 @@
++# 增量代码覆盖率
++
++> 全量代码覆盖率可以直观的看到整个App的代码的覆盖率情况，但是往往有效或者被关注的是增量代码覆盖率数据，这里是基于git能力，通过一系列的处理获取我们想要的增量的信息，结合覆盖率信息，得到一份增量的覆盖率信息。
++
++## 一、获取代码diff
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++本文参考  [获取git增量代码数据](https://blog.jerrychu.top/2020/06/07/%E8%8E%B7%E5%8F%96git%E5%A2%9E%E9%87%8F%E4%BB%A3%E7%A0%81%E6%95%B0%E6%8D%AE/) 
++
+diff --git a/Example/HDCoverageFramework/HDOCFramework.m b/Example/HDCoverageFramework/HDOCFramework.m
+index f617df7..5618bce 100644
+--- a/Example/HDCoverageFramework/HDOCFramework.m
++++ b/Example/HDCoverageFramework/HDOCFramework.m
+@@ -19,0 +20 @@ + (void)frameworkOCAction:(NSInteger)tag {
++        NSLog(@"frameworkOCAction: new line");
+@@ -20,0 +22,6 @@ + (void)frameworkOCAction:(NSInteger)tag {
++        if (random() % 2 == 0) {
++            NSLog(@"frameworkOCAction: new line random() %% 2 = 0");
++        }
++        else {
++            NSLog(@"frameworkOCAction: new line random() %% 2 = 1");
++        }
+diff --git a/Example/HDCoverageFramework/HDSwiftFramework.swift b/Example/HDCoverageFramework/HDSwiftFramework.swift
+index 07d6661..20b6bb6 100644
+--- a/Example/HDCoverageFramework/HDSwiftFramework.swift
++++ b/Example/HDCoverageFramework/HDSwiftFramework.swift
+@@ -30,0 +31 @@ public struct HDSwiftFramework {
++            print("frameworkSwiftAction: new line")
+@@ -31,0 +33,6 @@ public struct HDSwiftFramework {
++            if (arc4random() % 2 == 0) {
++                print("frameworkSwiftAction: arc4random() %% 2 = 0")
++            }
++            else {
++                print("frameworkSwiftAction: arc4random() %% 2 = 1")
++            }
+diff --git a/README.md b/README.md
+index 97cdde6..824f767 100644
+--- a/README.md
++++ b/README.md
+@@ -122,0 +123 @@ class HDCoverageTools: NSObject {
++    // 
+@@ -256,0 +258,10 @@ $ tree -L 3
++
++
++## 小结
++
++全量代码覆盖率可以帮助开发者聚焦变动代码的逻辑缺陷，从而更好地避免线上问题。这里更多的是讲述基于 `Swift & Objective-C` 工程的 **全量代码覆盖率** 的方案，没有原理，只有简单的流程。中途尝试过多个方案，最终依靠 `Cocoapods` 能力将自动化脚本赋能出去。
++
++但是实际开发过程，不可能每次都去关注 全量代码覆盖率，下一篇继续介绍 [增量代码覆盖率](./Coverage_Gather)
++
++
++

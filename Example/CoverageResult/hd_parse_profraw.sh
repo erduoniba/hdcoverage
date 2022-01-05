@@ -43,12 +43,24 @@ function findMachOFile {
     machOFilePath=$(find $machOFiles -name $1)
     echo "findMachOFilePath: $machOFilePath"
 
-    disposeProfrawToHtml $1 $machOFilePath
+    disposeProfrawToHtmlByLlvmcov $1 $machOFilePath
 }
 
-function disposeProfrawToHtml {
+function disposeProfrawToHtmlByLlvmcov {
     echo "===================================\n"
-    echo "disposeProfrawToHtml, machoFileName: $1 machOFilePath: $2"
+    echo "disposeProfrawToHtmlByLlvmcov, machoFileName: $1 machOFilePath: $2"
+    xcrun llvm-profdata merge -sparse $profraws/$1.profraw -o $profraws/$1.profdata
+
+    if [ $? -eq 0 ]; then
+        xcrun llvm-cov show $2 -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
+    else
+        echo "llvm-cov faild"
+    fi
+}
+
+function disposeProfrawToHtmlByGenhtml {
+    echo "===================================\n"
+    echo "disposeProfrawToHtmlByGenhtml, machoFileName: $1 machOFilePath: $2"
     xcrun llvm-profdata merge -sparse $profraws/$1.profraw -o $profraws/$1.profdata
 
     if [ $? -eq 0 ]; then
