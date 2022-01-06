@@ -4,18 +4,19 @@ function hecho {
 
 function main {
     echo "\n"
-    hecho "macho & hd_parse_profraw.sh copy begin"
+    hecho "macho & hd_parse_profraw.sh & gitdiff copy begin"
 
     resulePath=$SRCROOT/CoverageResult
     machoFiles=$resulePath/MachOFiles
     profrawFiles=$resulePath/Profraw
+    gitDiffs=$resulePath/Gitdiffs
     
     judgeResultFolder
     copyIpaAndShellFile
     
     open $resulePath
     
-    hecho "macho & hd_parse_profraw.sh copy end"
+    hecho "macho & hd_parse_profraw.sh & gitdiff copy end"
     echo "\n"
 }
 
@@ -34,6 +35,13 @@ function judgeResultFolder {
         mkdir $profrawFiles
         hecho "$profrawFiles not found，already created."
     fi
+
+    if [[ -d $gitDiffs ]]; then
+        hecho "$gitDiffs exist."
+    else
+        mkdir $gitDiffs
+        hecho "$gitDiffs not found，already created."
+    fi
 }
 
 function copyIpaAndShellFile {
@@ -43,13 +51,11 @@ function copyIpaAndShellFile {
 
     scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     parseProfrawPath="$resulePath/hd_parse_profraw.sh"
+    parseProfrawGatherPath="$resulePath/hd_parse_profraw_gather.sh"
     
-    if [[ -d $parseProfrawPath ]]; then
-            hecho "$parseProfrawPath exist."
-    else
-        cp -r ${scripts}/hd_parse_profraw.sh $resulePath
-            hecho "$parseProfrawPath not found，already copyed."
-    fi
+    cp -r ${scripts}/hd_parse_profraw.sh $resulePath
+    cp -r ${scripts}/hd_parse_profraw_gather.sh $resulePath
+    cp -r ${scripts}/GitdiffUtils $resulePath
 
     hecho "macho_copy end"
 }
