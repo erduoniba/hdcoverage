@@ -15,7 +15,9 @@
 
 ## 使用
 
-**1、安装：** 通过 [CocoaPods](https://cocoapods.org) 进行安装，在你的 Podfile 文件添加如下代码：
+#### **1、安装：**
+
+ 通过 [CocoaPods](https://cocoapods.org) 进行安装，在你的 Podfile 文件添加如下代码：
 
 ```ruby
 pod 'HDCoverage'
@@ -23,7 +25,9 @@ pod 'HDCoverage'
 
 然后 `pod install` 安装下载相关脚本文件。
 
-**2、关联脚本：** 在项目的 `Xcode` 的 `Build Phases` 添加新的脚本（`New Run Script Phase`）（App在Build会执行该脚本）:
+#### **2、关联脚本：** 
+
+在项目的 `Xcode` 的 `Build Phases` 添加新的脚本（`New Run Script Phase`）（App在Build会执行该脚本）:
 
 ```sh
 "${PODS_ROOT}/HDCoverage/HDCoverage/hd_coverage_env.sh"
@@ -31,7 +35,9 @@ pod 'HDCoverage'
 
 ![image-20211029141436560](./Img/image-20211029141436560.png)
 
-**3、工程配置代码覆盖率参数：** 这里本来是在 `HDCoverage` 有脚本支持的，但是基于对哪些模块（Pod作为独立模版）进行代码覆盖率，所以建议在 `Podfile` 自主添加如下代码灵活管理，详细说明如下：
+#### **3、工程配置代码覆盖率参数：** 
+
+这里本来是在 `HDCoverage` 有脚本支持的，但是基于对哪些模块（Pod作为独立模版）进行代码覆盖率，所以建议在 `Podfile` 自主添加如下代码灵活管理，详细说明如下：
 
 ```ruby
 # 实现post_install Hooks
@@ -94,7 +100,9 @@ post_install do |installer|
 end
 ```
 
-**4、代码执行数据收集：** 使用 `GCC` 无法满足 同时兼容 `Swift ` 和 `Objective-C` ，所以这里是基于 `LLVM` 进行，[官网文档](https://clang.llvm.org/docs/SourceBasedCodeCoverage.html) 。也可以参考笔者翻译的 [Source-based Code Coverage](https://blog.csdn.net/u012390519/article/details/121096466) ，完整详细的教程可以看 [Source-based Code Coverage for Swift Step by Step](https://nycode-jn.medium.com/source-based-code-coverage-for-swift-step-by-step-3df3c44c28d9)。
+#### **4、代码执行数据收集：** 
+
+使用 `GCC` 无法满足 同时兼容 `Swift ` 和 `Objective-C` ，所以这里是基于 `LLVM` 进行，[官网文档](https://clang.llvm.org/docs/SourceBasedCodeCoverage.html) 。也可以参考笔者翻译的 [Source-based Code Coverage](https://blog.csdn.net/u012390519/article/details/121096466) ，完整详细的教程可以看 [Source-based Code Coverage for Swift Step by Step](https://nycode-jn.medium.com/source-based-code-coverage-for-swift-step-by-step-3df3c44c28d9)。
 
 4.1、首先在工程中申明 `LLVM` 几个关键的函数：
 
@@ -163,7 +171,9 @@ func sceneDidEnterBackground(_ scene: UIScene) {
     }
 ```
 
-**5、测试以便生成覆盖率数据：** 以本工程的demo为例说明
+#### **5、测试以便生成覆盖率数据：** 
+
+以本工程的demo为例说明
 
 5.1、在运行成功后，`Finder` 会自动弹出如下目录：
 
