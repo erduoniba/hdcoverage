@@ -502,11 +502,11 @@ $ tree -L 2
 
 #### 1、采集获取覆盖率文件
 
-获取  `*.profraw` 不在重复说明，直接使用 [1、测试增量功能以便生成覆盖率数据：](#1、测试增量功能以便生成覆盖率数据 )的数据即可。
+获取  `*.profraw` 不在重复说明，直接使用 [1、测试增量功能以便生成覆盖率数据：](#1测试增量功能以便生成覆盖率数据 )的数据即可。
 
 #### 2、一键生成代码增量覆盖率可视化
 
-App运行后，会在项目根目录自动生成如下 `CoverageResult` ：
+App运行后，会在项目根目录自动生成 `CoverageResult`目录，具体的内入如下 ：
 
 ```sh
 $ tree -L 2
@@ -582,10 +582,10 @@ $ tree -L 3
 │       ├── PkgInfo
 │       └── _CodeSignature
 ├── Profraw
-│   ├── HDCoverageDemo.info						# 全量代码覆盖率数据
+│   ├── HDCoverageDemo.info							# 全量代码覆盖率数据
 │   ├── HDCoverageDemo.profdata
 │   ├── HDCoverageDemo.profraw
-│   └── HDCoverageDemo_gather.info		# 9ad563e 相较上次的增量代码覆盖率数据
+│   └── HDCoverageDemo_gather.info			# 9ad563e 相较上次的增量代码覆盖率数据
 ├── Results
 │   └── HDCoverageDemo_gather
 │       ├── HDCoverageFramework
@@ -607,9 +607,11 @@ $ tree -L 3
 
 #### 3、增量代码覆盖率可视化
 
-可视化文件在 `Results/HDCoverageDemo_gather` 中，打开 `index.html` 即可看到输出结果：
+可视化文件在 `Results/HDCoverageDemo_gather` 中，打开 `index.html` 即可看到输出结果，简简单单两部即可输出结果：
 
 ![image-20220105181807003](./Img/coverage_gather3.png)
+
+当然，实践的开发过程中，肯定是比这个会复杂的多，比如每个公司的开发环境不同、多个覆盖率数据合并、多模块多仓库代码增量计算、动态库的特殊处理等等。因为笔者在探索实践前也找寻了大量的资料，收获也挺多，但是未曾找到能覆盖到 `Swift` 的增量覆盖率的方向及具体细节，所以才有了这一次可行性实践。正好也填补一下在 `Swift` 开发增量代码覆盖率这一小点的空缺。如果有大佬发现有更加高效、靠谱的方案也请及时告知，共同学习共建起来。
 
 
 
