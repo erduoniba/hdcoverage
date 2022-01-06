@@ -1,4 +1,5 @@
 SF:/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/HDCoverageFramework/HDOCFramework.m
+SF:/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/HDCoverageFramework/HDOCFramework.m
 FN:12,HDOCFramework.m:+[HDOCFramework frameworkOCAction:]
 FNDA:2,HDOCFramework.m:+[HDOCFramework frameworkOCAction:]
 FNF:1
@@ -13,6 +14,7 @@ DA:27,1
 LF:22
 LH:18
 end_of_record
+SF:/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/HDCoverageFramework/HDSwiftFramework.swift
 SF:/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/HDCoverageFramework/HDSwiftFramework.swift
 FN:11,$s19HDCoverageFramework07HDSwiftB0V11saveProfileyyFZ
 FN:26,$s19HDCoverageFramework07HDSwiftB0V20frameworkSwiftActionyySiFZ

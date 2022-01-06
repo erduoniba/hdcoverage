@@ -1,6 +1,6 @@
 # 增量代码覆盖率
 
-> 全量代码覆盖率可以直观的看到整个App的代码的覆盖率情况，但是往往有效或者被关注的是增量代码覆盖率数据，这里是基于git能力，通过一系列的处理获取我们想要的增量的信息，结合覆盖率信息，得到一份增量的覆盖率信息。
+> 全量代码覆盖率可以直观的看到整个App的代码的覆盖率情况，但是往往有用的或者被关注的是增量代码覆盖率数据。经过不断的学习和探索，发现在基于git diff能力，通过一系列的处理获取我们想要的增量的信息，结合覆盖率信息，得到一份增量的覆盖率信息。
 
 ## 一、获取代码diff
 
@@ -257,7 +257,7 @@ a90c8b98df705cc67eb19109c303826540f63c56 refs/tags/1.0.1
 
 
 
-#### 1、**测试增量功能以便生成覆盖率数据：** 
+#### 1、测试增量功能以便生成覆盖率数据 
 
 以本工程的最新demo为例说明
 
@@ -500,7 +500,116 @@ $ tree -L 2
 
 上面两部已经验证了可行性，但是中间过程不仅多，而且繁碎，很容易出现错误。所以这里收拢成脚本，尽可能将大量重复易错的地方自动执行。
 
+#### 1、采集获取覆盖率文件
 
+获取  `*.profraw` 不在重复说明，直接使用 [1、测试增量功能以便生成覆盖率数据：](#1、测试增量功能以便生成覆盖率数据 )的数据即可。
+
+#### 2、一键生成代码增量覆盖率可视化
+
+App运行后，会在项目根目录自动生成如下 `CoverageResult` ：
+
+```sh
+$ tree -L 2
+.
+├── GitdiffUtils									# git diff 工具类
+│   ├── trollop.rb
+│   └── utils
+├── Gitdiffs											# git diff 的可用数据
+├── MachOFiles										# 代码生成的二进制文件
+│   └── HDCoverageDemo.app
+├── Profraw												# 存放执行的代码覆盖率文件
+├── hd_parse_profraw.sh						# 生成全量代码覆盖率可视化页面的脚本
+└── hd_parse_profraw_gather.sh		# 生成增量代码覆盖率可视化页面的脚本
+
+6 directories, 3 files
+```
+
+将   `*.profraw`  拷贝到 `CoverageResult/Profraw` 中，然后执行：
+
+```sh
+# 9ad563e：改动后的commitid 	a8692db：代码对比的commitid
+$ sh hd_parse_profraw_gather.sh 9ad563e a8692db
+Results: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Results 
+machOFiles: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/MachOFiles
+/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Results 存在
+disposeProfrawFiles profraws: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Profraw
+disposeProfrawFiles profraw file: HDCoverageDemo.profraw
+===================================
+
+findMachOFileName: HDCoverageDemo
+findMachOFilePath: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/MachOFiles/HDCoverageDemo.app/HDCoverageDemo
+===================================
+
+disposeProfrawToHtmlByGenhtml, machoFileName: HDCoverageDemo machOFilePath: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/MachOFiles/HDCoverageDemo.app/HDCoverageDemo
+diff_file: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Gitdiffs/9ad563e.diff
+coverage_info_file: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Profraw/HDCoverageDemo.info
+======
+coverage_info_path: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Profraw
+coverage_info_file: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Profraw/HDCoverageDemo.info
+coverage_gather_file_path: /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Profraw/HDCoverageDemo_gather.info
+======
+Reading data file /Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/CoverageResult/Profraw/HDCoverageDemo_gather.info
+Found 2 entries.
+Found common filename prefix "/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example"
+Writing .css and .png files.
+Generating output.
+Processing file HDCoverageFramework/HDSwiftFramework.swift
+Processing file HDCoverageFramework/HDOCFramework.m
+Writing directory view page.
+Overall coverage rate:
+  lines......: 78.6% (11 of 14 lines)
+  functions..: 66.7% (2 of 3 functions)
+```
+
+查看生成了哪些内容：
+
+```sh
+$ tree -L 3                                    
+.
+├── GitdiffUtils
+│   ├── trollop.rb
+│   └── utils
+│       └── diffParser.rb
+├── Gitdiffs
+│   ├── 9ad563e.diff					# 9ad563e 相较上次的全部改动信息
+│   └── 9ad563e.json					# 9ad563e 相较上次处理过的改动信息（文件名+改动行数信息）
+├── MachOFiles
+│   └── HDCoverageDemo.app
+│       ├── Base.lproj
+│       ├── Frameworks
+│       ├── HDCoverageDemo
+│       ├── Info.plist
+│       ├── PkgInfo
+│       └── _CodeSignature
+├── Profraw
+│   ├── HDCoverageDemo.info						# 全量代码覆盖率数据
+│   ├── HDCoverageDemo.profdata
+│   ├── HDCoverageDemo.profraw
+│   └── HDCoverageDemo_gather.info		# 9ad563e 相较上次的增量代码覆盖率数据
+├── Results
+│   └── HDCoverageDemo_gather
+│       ├── HDCoverageFramework
+│       ├── amber.png
+│       ├── emerald.png
+│       ├── gcov.css
+│       ├── glass.png
+│       ├── index-sort-f.html
+│       ├── index-sort-l.html
+│       ├── index.html
+│       ├── ruby.png
+│       ├── snow.png
+│       └── updown.png
+├── hd_parse_profraw.sh
+└── hd_parse_profraw_gather.sh
+
+12 directories, 23 files
+```
+
+#### 3、增量代码覆盖率可视化
+
+可视化文件在 `Results/HDCoverageDemo_gather` 中，打开 `index.html` 即可看到输出结果：
+
+![image-20220105181807003](./Img/coverage_gather3.png)
 
 
 

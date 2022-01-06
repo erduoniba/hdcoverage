@@ -1,11 +1,17 @@
 # https://llvm.org/docs/CommandGuide/llvm-cov.html#llvm-cov-show
 
 function main {
+    gitCommitid1=$1
+    gitCommitid2=$2
     scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-    result=$scripts/CoverageResult
+    result=$scripts/Results
     machOFiles=$scripts/MachOFiles
     profraws=$scripts/Profraw
-    echo "CoverageResult: $result \nmachOFiles: $machOFiles"
+    # git diff 结果目录
+    gitDiffs=$scripts/Gitdiffs
+    # 解析git diff的ruby工具类目录
+    gitdiffUtils=$scripts/GitdiffUtils
+    echo "Results: $result \nmachOFiles: $machOFiles"
 
     judgeResultFolder
     disposeProfrawFiles
@@ -53,15 +59,31 @@ function disposeProfrawToHtmlByGenhtml {
     xcrun llvm-profdata merge -sparse $profraws/$1.profraw -o $profraws/$1.profdata
 
     if [ $? -eq 0 ]; then
+        coverage_info=$profraws/$1.info
         # profdata to info
-        xcrun llvm-cov export $2 -instr-profile=$profraws/$1.profdata -format=lcov > $profraws/$1.info
+        xcrun llvm-cov export $2 -instr-profile=$profraws/$1.profdata -format=lcov > $coverage_info
+
+        # git diff，修改info文件，得到增量info数据
+        disposeGitDiff $gitCommitid1 $gitCommitid2 $coverage_info
 
         # 通过info 生成覆盖率
-        coverageGather="$1_gather"
-        genhtml -o $result/$coverageGather $profraws/$1.info
+        coverage_gather="$1_gather"
+        genhtml -o $result/$coverage_gather $profraws/$coverage_gather.info
     else
         echo "llvm-cov faild"
     fi
 }
 
-main
+# 解析gitdiff数据
+function disposeGitDiff {
+    # 生成原始的diff文件
+    diff_file=$gitDiffs/$1.diff
+    git diff $1 $2 --unified=0 > $diff_file
+    echo "diff_file: $diff_file"
+    echo "coverage_info_file: $3"
+    # 提取可用（json化）的diff文件，根据原始info文件，重新生成增量的info数据
+    ruby $gitdiffUtils/utils/diffParser.rb --diff-file=$diff_file --coverage-info-file=$3
+}
+
+# 第一、二个参数为git commitid
+main $1 $2
