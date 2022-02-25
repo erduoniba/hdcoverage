@@ -63,9 +63,6 @@ module GitUtil
 
         diff_file_path = File.dirname(diff_file)
         diff_file_name = File.basename(diff_file, ".*")
-        puts "diff_file: #{diff_file}"
-        puts "diff_file_path: #{diff_file_path}"
-        puts "diff_file_name: #{diff_file_name}"
         diff_json_file_path = "#{diff_file_path}/#{diff_file_name}.json"
         diff_json_file = File.new(diff_json_file_path, "w+")
         diff_json_file.syswrite(file_map.to_json)

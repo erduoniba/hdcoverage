@@ -1,0 +1,11 @@
+framework module HDCoverageSFramework {
+  umbrella header "HDCoverageSFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module HDCoverageSFramework.Swift {
+    header "HDCoverageSFramework-Swift.h"
+    requires objc
+}

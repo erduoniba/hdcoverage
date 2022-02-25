@@ -45,4 +45,12 @@ class ViewController: UIViewController {
     @IBAction func podSwiftAction(_ sender: UIButton) {
         
     }
+    
+    @IBAction func outSFrameworkOCAction(_ sender: UIButton) {
+        HDOCSFramework.frameworkOCStaticFrameworkAction(sender.tag)
+    }
+    
+    @IBAction func outSFrameworkSwiftAction(_ sender: UIButton) {
+        HDSwiftSFramework.outSFrameworkSwiftAction(sender.tag)
+    }
 }

@@ -10,9 +10,11 @@ function main {
     machoFiles=$resulePath/MachOFiles
     profrawFiles=$resulePath/Profraw
     gitDiffs=$resulePath/Gitdiffs
+    generateMergeOFiles=$machoFiles/generateMergeOFiles
     
     judgeResultFolder
     copyIpaAndShellFile
+    generateMergeO
     
     open $resulePath
     
@@ -42,6 +44,13 @@ function judgeResultFolder {
         mkdir $gitDiffs
         hecho "$gitDiffs not found，already created."
     fi
+    
+    if [[ -d $generateMergeOFiles ]]; then
+        hecho "$generateMergeOFiles exist."
+    else
+        mkdir $generateMergeOFiles
+        hecho "$generateMergeOFiles not found，already created."
+    fi
 }
 
 function copyIpaAndShellFile {
@@ -58,6 +67,31 @@ function copyIpaAndShellFile {
     cp -r ${scripts}/GitdiffUtils $resulePath
 
     hecho "macho_copy end"
+}
+
+function read_dir {
+    for file in `ls $1`
+    do
+        hecho "read_dir file $file"
+        # 如果是文件夹，则继续遍历
+        if [ -d $1"/"$file ]
+        then
+            read_dir $1"/"$file
+        else
+            filePath=$1"/"$file
+            hecho "read_dir filePath $filePath"
+            # 判断后缀是.m或者.swift文件
+            if [[ "${filePath##*.}"x = "o"x ]]; then
+                hecho "macho_filePath $filePath generateMergeOFiles: $generateMergeOFiles"
+                cp -r $filePath $generateMergeOFiles
+            fi
+        fi
+    done
+}
+
+function generateMergeO {
+    read_dir $PROJECT_TEMP_ROOT
+    ld -r -o $machoFiles/$PROJECT.o $generateMergeOFiles/*.o
 }
 
 main

@@ -21,6 +21,7 @@
 		D90061A7272D3A4900F7B46D /* HDOCFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = D90061A3272D3A4900F7B46D /* HDOCFramework.m */; };
 		D90061A8272D3A4900F7B46D /* HDSwiftFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90061A4272D3A4900F7B46D /* HDSwiftFramework.swift */; };
 		D90067A127311B3500F7B46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F0670327253A3400E77D7A /* Assets.xcassets */; };
+		D9B92A6E27C7749A0090FAF7 /* HDCoverageSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B92A6D27C7749A0090FAF7 /* HDCoverageSFramework.framework */; };
 		D9F066FB27253A3100E77D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F066FA27253A3100E77D7A /* AppDelegate.swift */; };
 		D9F066FD27253A3100E77D7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F066FC27253A3100E77D7A /* SceneDelegate.swift */; };
 		D9F066FF27253A3100E77D7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F066FE27253A3100E77D7A /* ViewController.swift */; };
@@ -90,6 +91,7 @@
 		D90061A2272D3A4900F7B46D /* HDOCFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDOCFramework.h; sourceTree = "<group>"; };
 		D90061A3272D3A4900F7B46D /* HDOCFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDOCFramework.m; sourceTree = "<group>"; };
 		D90061A4272D3A4900F7B46D /* HDSwiftFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDSwiftFramework.swift; sourceTree = "<group>"; };
+		D9B92A6D27C7749A0090FAF7 /* HDCoverageSFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDCoverageSFramework.framework; sourceTree = "<group>"; };
 		D9F066F827253A3100E77D7A /* HDCoverageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDCoverageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F066FA27253A3100E77D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F066FC27253A3100E77D7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9006196272D3A3800F7B46D /* HDCoverageFramework.framework in Frameworks */,
+				D9B92A6E27C7749A0090FAF7 /* HDCoverageSFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +241,14 @@
 			path = HDCoverageFrameworkTests;
 			sourceTree = "<group>";
 		};
+		D9B92A6C27C7748A0090FAF7 /* HDCoverageSFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D9B92A6D27C7749A0090FAF7 /* HDCoverageSFramework.framework */,
+			);
+			path = HDCoverageSFramework;
+			sourceTree = "<group>";
+		};
 		D9F066F927253A3100E77D7A /* HDCoverageDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +256,7 @@
 				D9F066FC27253A3100E77D7A /* SceneDelegate.swift */,
 				D9F066FE27253A3100E77D7A /* ViewController.swift */,
 				D9006171272D38C600F7B46D /* HDCoverageDemo-Bridging-Header.h */,
+				D9B92A6C27C7748A0090FAF7 /* HDCoverageSFramework */,
 				D9006157272D373E00F7B46D /* Tools */,
 				D900614F272D373800F7B46D /* CoverageTest */,
 				D9F0670E27253A3D00E77D7A /* Sources */,
@@ -507,7 +519,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "env\n\"$SRCROOT/../HDCoverage/hd_coverage_env.sh\"\n";
+			shellScript = "\"$SRCROOT/../HDCoverage/hd_coverage_env.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -887,6 +899,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HDCoverageDemo/HDCoverageSFramework",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -935,6 +951,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KC6BPGQZW4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HDCoverageDemo/HDCoverageSFramework",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (

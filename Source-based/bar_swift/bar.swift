@@ -28,20 +28,20 @@ print("\(add(1, 2))")
 
 /*
 // 覆盖率编译
-swiftc -profile-generate -profile-coverage-mapping bar.swift -o bar_coverage
+swiftc -profile-generate -profile-coverage-mapping barswift -o bar_coverage
 // 正常编译
-swiftc bar.swift -o bar_no_coverage
+swiftc barswift -o bar_no_coverage
 
-// 执行代码，会在当前目录得到 default.profraw
-./bar_coverage
+// 执行代码，会在当前目录得到 defaultprofraw
+/bar_coverage
 
 // 生成执行的代码数据
-xcrun llvm-profdata merge -sparse default.profraw -o bar_coverage.profdata
+xcrun llvm-profdata merge -sparse defaultprofraw -o bar_coverageprofdata
 
 # 查看profdata数据
-xcrun llvm-profdata show -all-functions -instr bar_coverage.profdata > bar_coverage_profdata.text
+xcrun llvm-profdata show -all-functions -instr bar_coverageprofdata > bar_coverage_profdatatext
 
 # 导出为html
-xcrun llvm-cov show ./bar_coverage -instr-profile=bar_coverage.profdata -use-color -format=html -output-dir bar_coverage_html
+xcrun llvm-cov show /bar_coverage -instr-profile=bar_coverageprofdata -use-color -format=html -output-dir bar_coverage_html
 */
 

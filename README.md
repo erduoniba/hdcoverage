@@ -287,6 +287,8 @@ $ tree -L 3
 
 [Source-based Code Coverage 中文版](https://blog.csdn.net/u012390519/article/details/121096466) ：llvm官网基于源码对Swift和OC进行代码覆盖率-笔者翻译（轻喷）
 
+[xcrun llvm-cov show: No coverage data found](https://stackoverflow.com/questions/66245096/xcrun-llvm-cov-show-no-coverage-data-found)：静态库也可以在生成的时候去插桩，然后将插桩后的多个  .o 文件进行合并，可以解决组件开发时，统计组件的代码覆盖率数据。
+
 
 
 ## License

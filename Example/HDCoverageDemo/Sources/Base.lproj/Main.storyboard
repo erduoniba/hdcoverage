@@ -215,7 +215,7 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退到后台，查看日志，找到profraw文件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3do-77-WZU">
-                                <rect key="frame" x="56.5" y="722" width="301" height="20"/>
+                                <rect key="frame" x="56.5" y="762" width="301" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="rz8-lM-5K6"/>
                                 </constraints>
@@ -223,27 +223,119 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SFramework(OC)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-yB-aoj">
+                                <rect key="frame" x="35" y="665" width="140" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="B4W-Xr-hel"/>
+                                    <constraint firstAttribute="width" constant="140" id="Hzf-Ok-XXR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wgX-oK-5w2">
+                                <rect key="frame" x="15" y="694" width="180" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4b-mb-R6n">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
+                                        <state key="normal" title="Case1"/>
+                                        <connections>
+                                            <action selector="outSFrameworkOCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4JN-Ne-cGN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IQ-be-gAZ">
+                                        <rect key="frame" x="72" y="0.0" width="44" height="30"/>
+                                        <state key="normal" title="Case2"/>
+                                        <connections>
+                                            <action selector="outSFrameworkOCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yda-bT-Sm3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYS-so-Khq">
+                                        <rect key="frame" x="136" y="0.0" width="44" height="30"/>
+                                        <state key="normal" title="Case3"/>
+                                        <connections>
+                                            <action selector="outSFrameworkOCAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fi8-ri-rkB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JPO-1V-s2w"/>
+                                    <constraint firstAttribute="width" constant="180" id="gV1-Z0-SDq"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SFramework(Swift)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6s-gr-Mql">
+                                <rect key="frame" x="230" y="665" width="150" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Igl-yJ-9Ss"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="XPQ-nK-g52"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qcC-8I-TVc">
+                                <rect key="frame" x="219" y="694" width="180" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-gN-j8w">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
+                                        <state key="normal" title="Case1"/>
+                                        <connections>
+                                            <action selector="outSFrameworkSwiftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z4i-LM-Vxw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjG-66-6Kk">
+                                        <rect key="frame" x="72" y="0.0" width="44" height="30"/>
+                                        <state key="normal" title="Case2"/>
+                                        <connections>
+                                            <action selector="outSFrameworkSwiftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USa-ad-PYd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9P-NP-3Vv">
+                                        <rect key="frame" x="136" y="0.0" width="44" height="30"/>
+                                        <state key="normal" title="Case3"/>
+                                        <connections>
+                                            <action selector="outSFrameworkSwiftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Phb-Dd-HIZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="QvF-Fw-xEf"/>
+                                    <constraint firstAttribute="height" constant="30" id="qXF-WZ-AAF"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KN6-Oc-cP8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Ij-95-sC7"/>
                             <constraint firstItem="srl-rV-NMy" firstAttribute="top" secondItem="lcw-pO-Fln" secondAttribute="bottom" constant="30" id="3c1-Yb-YkN"/>
+                            <constraint firstItem="qcC-8I-TVc" firstAttribute="top" secondItem="q6s-gr-Mql" secondAttribute="bottom" constant="8.5" id="4N1-Gv-KZQ"/>
                             <constraint firstItem="90G-Gm-6pg" firstAttribute="top" secondItem="KN6-Oc-cP8" secondAttribute="bottom" constant="15" id="53g-Ip-L1H"/>
+                            <constraint firstItem="wgX-oK-5w2" firstAttribute="top" secondItem="kZl-yB-aoj" secondAttribute="bottom" constant="8.5" id="BAb-mP-XyM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q6s-gr-Mql" secondAttribute="trailing" constant="34" id="CMs-FS-MPy"/>
                             <constraint firstItem="dsr-Zh-0S4" firstAttribute="top" secondItem="yKI-1h-vIj" secondAttribute="bottom" constant="30" id="CjT-wv-T9x"/>
                             <constraint firstItem="Uqv-Ez-zwk" firstAttribute="top" secondItem="Bfb-ls-cRK" secondAttribute="bottom" constant="8.5" id="EBG-Ca-Jbb"/>
+                            <constraint firstItem="q6s-gr-Mql" firstAttribute="top" secondItem="HlE-AY-yss" secondAttribute="bottom" constant="42" id="KOy-bI-U96"/>
                             <constraint firstItem="Bfb-ls-cRK" firstAttribute="top" secondItem="JpT-ab-NUg" secondAttribute="bottom" constant="30" id="LTf-W0-9qV"/>
                             <constraint firstItem="lcw-pO-Fln" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lbu-BU-jSf"/>
                             <constraint firstItem="uW9-2W-NFI" firstAttribute="top" secondItem="90G-Gm-6pg" secondAttribute="bottom" constant="30" id="LmY-Qf-Rb9"/>
                             <constraint firstItem="srl-rV-NMy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nrj-Ld-eGs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qcC-8I-TVc" secondAttribute="trailing" constant="15" id="Oez-AG-znf"/>
+                            <constraint firstItem="qcC-8I-TVc" firstAttribute="top" secondItem="q6s-gr-Mql" secondAttribute="bottom" constant="8.5" id="PDa-ZZ-f2m"/>
                             <constraint firstItem="yKI-1h-vIj" firstAttribute="top" secondItem="srl-rV-NMy" secondAttribute="bottom" constant="8.5" id="QoR-Qi-slh"/>
                             <constraint firstItem="HlE-AY-yss" firstAttribute="top" secondItem="dsr-Zh-0S4" secondAttribute="bottom" constant="10" id="R1y-80-oVY"/>
                             <constraint firstItem="JpT-ab-NUg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RNZ-Ks-Hkk"/>
                             <constraint firstItem="90G-Gm-6pg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WuG-mP-hbM"/>
+                            <constraint firstItem="kZl-yB-aoj" firstAttribute="top" secondItem="HlE-AY-yss" secondAttribute="bottom" constant="42" id="Y9B-Go-vlv"/>
+                            <constraint firstItem="wgX-oK-5w2" firstAttribute="top" secondItem="kZl-yB-aoj" secondAttribute="bottom" constant="8.5" id="Yd0-67-QSd"/>
                             <constraint firstItem="Uqv-Ez-zwk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bAw-H5-ubx"/>
                             <constraint firstItem="lcw-pO-Fln" firstAttribute="top" secondItem="r1W-zQ-o1q" secondAttribute="bottom" constant="10" id="bqF-o5-TUw"/>
+                            <constraint firstItem="kZl-yB-aoj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="cKx-nh-EWq"/>
                             <constraint firstItem="3do-77-WZU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dhT-Lk-4oM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3do-77-WZU" secondAttribute="bottom" constant="120" id="gNv-Wh-jj2"/>
+                            <constraint firstItem="wgX-oK-5w2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="f6K-gO-iiC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3do-77-WZU" secondAttribute="bottom" constant="80" id="gNv-Wh-jj2"/>
                             <constraint firstItem="yKI-1h-vIj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hBt-2q-HjX"/>
                             <constraint firstItem="KN6-Oc-cP8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="ieF-wa-JcU"/>
                             <constraint firstItem="uW9-2W-NFI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qbb-Un-jmB"/>
