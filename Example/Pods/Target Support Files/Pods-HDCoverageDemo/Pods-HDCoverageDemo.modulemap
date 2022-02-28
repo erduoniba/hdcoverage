@@ -1,0 +1,6 @@
+framework module Pods_HDCoverageDemo {
+  umbrella header "Pods-HDCoverageDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

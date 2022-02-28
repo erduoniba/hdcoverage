@@ -1,7 +1,7 @@
 use_frameworks!
-target 'HDCoverage_Tests' do
+target 'HDCoverageDemo' do
   pod 'HDCoverage', :path => '../'
-  
+  pod 'AFNetworking'
   
 end
 

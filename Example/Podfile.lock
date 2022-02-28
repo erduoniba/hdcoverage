@@ -1,16 +1,37 @@
 PODS:
-  - HDCoverage (1.0.9)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - HDCoverage (1.1.0)
 
 DEPENDENCIES:
+  - AFNetworking
   - HDCoverage (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   HDCoverage:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HDCoverage: 31f2ec95b90df29ab8b167ddbbe948cef84c51cc
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  HDCoverage: 5ed884a20466e4f04854ee4e2dc3f5a98c963945
 
-PODFILE CHECKSUM: 79daa27cee91fac6fcf5bda68060e8b89ff4c2f9
+PODFILE CHECKSUM: 70dc1b4901ea82ee3f8509cbf4ceeaacc6a91e9c
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

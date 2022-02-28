@@ -52,7 +52,8 @@ function disposeProfrawToHtmlByLlvmcov {
     xcrun llvm-profdata merge -sparse $profraws/$1.profraw -o $profraws/$1.profdata
 
     if [ $? -eq 0 ]; then
-        xcrun llvm-cov show $2 -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
+#        xcrun llvm-cov show $2 -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
+        xcrun llvm-cov show $machOFiles/$1.o -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
     else
         echo "llvm-cov faild"
     fi

@@ -10,7 +10,7 @@ function main {
     machoFiles=$resulePath/MachOFiles
     profrawFiles=$resulePath/Profraw
     gitDiffs=$resulePath/Gitdiffs
-    generateMergeOFiles=$machoFiles/generateMergeOFiles
+    generateMergeOFiles=$machoFiles/GenerateMergeOFiles
     
     judgeResultFolder
     copyIpaAndShellFile
@@ -45,18 +45,12 @@ function judgeResultFolder {
         hecho "$gitDiffs not found，already created."
     fi
     
-    if [[ -d $generateMergeOFiles ]]; then
-        hecho "$generateMergeOFiles exist."
-    else
-        mkdir $generateMergeOFiles
-        hecho "$generateMergeOFiles not found，already created."
-    fi
+    mkdir -p $generateMergeOFiles
 }
 
 function copyIpaAndShellFile {
-    hecho "ipa_path: $CODESIGNING_FOLDER_PATH"
-
-    cp -r $CODESIGNING_FOLDER_PATH $machoFiles
+#    hecho "ipa_path: $CODESIGNING_FOLDER_PATH"
+#    cp -r $CODESIGNING_FOLDER_PATH $machoFiles
 
     scripts="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
     parseProfrawPath="$resulePath/hd_parse_profraw.sh"

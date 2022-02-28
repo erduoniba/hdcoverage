@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     
     @IBAction func projectOCAction(_ sender: UIButton) {
         HDOC.projectOCAction(sender.tag)
+        
+        AFHTTPSessionManager().get("https://api.github.com/users", parameters: nil, headers: nil, progress: nil) { (_, response) in
+            debugPrint("response: \(String(describing: response))")
+        } failure: { (_, _) in
+            
+        }
     }
     
     @IBAction func projectSwiftAction(_ sender: UIButton) {

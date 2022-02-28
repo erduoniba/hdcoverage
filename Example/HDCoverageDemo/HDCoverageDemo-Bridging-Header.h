@@ -6,3 +6,4 @@
 #import "InstrProfiling.h"
 #import <HDCoverageFramework/HDOCFramework.h>
 #import <HDCoverageSFramework/HDCoverageSFramework.h>
+#import <AFNetworking/AFNetworking.h>
