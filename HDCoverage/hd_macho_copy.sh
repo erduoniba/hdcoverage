@@ -84,7 +84,10 @@ function read_dir {
 }
 
 function generateMergeO {
+    # 将编译插桩后的目标文件generateMergeOFiles目录
     read_dir $PROJECT_TEMP_ROOT
+    # https://stackoverflow.com/questions/66245096/xcrun-llvm-cov-show-no-coverage-data-found
+    # 将多个目标文件手动链接然后生成组合目标文件
     ld -r -o $machoFiles/$PROJECT.o $generateMergeOFiles/*.o
 }
 
