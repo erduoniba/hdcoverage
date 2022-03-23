@@ -34,7 +34,8 @@ function disposeProfrawFiles() {
     files=$(ls $profraws)
     for file in $files; do
         echo "disposeProfrawFiles profraw file: $file"
-        format=${file#*.}
+        # 获取文件后缀名，兼容多个点号
+        format=${file##*.}
         if [[ "$format" = "profraw" ]]; then
             # 截取 .后缀名 获取得到文件名
             fileName=${file%.profraw}
