@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/HDCoverageSFramework-Swift.h</key>
 		<data>
-		RNGI4lkkBDtLEiQuc6Joz+OFA+A=
+		8uWBLSWYHvy82Vr53fl3wh36rVU=
 		</data>
 		<key>Headers/HDCoverageSFramework.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IdvDofc/rZ0f701J9/AawOkp8ks=
+		n9YmEwejs1I4o0BT6RXSj93+SD4=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Ml8I2fQwMB2BKiPqnToNogWXo/I=
+		BoItCiE04AROUBYKxJd9Tih/uRM=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		Ml8I2fQwMB2BKiPqnToNogWXo/I=
+		BoItCiE04AROUBYKxJd9Tih/uRM=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		C0/MXNh22MW04sU3MJq4qCuqOOU=
+		0XLqGI3REHV6ye8IdDVpeyNLqZk=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SlUSOwBZMLcUaOgApcAGEUIn3xY=
+		bWsZAGkllfnTxkpw/IDODdU1ZCM=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		C0/MXNh22MW04sU3MJq4qCuqOOU=
+		0XLqGI3REHV6ye8IdDVpeyNLqZk=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		SlUSOwBZMLcUaOgApcAGEUIn3xY=
+		bWsZAGkllfnTxkpw/IDODdU1ZCM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RNGI4lkkBDtLEiQuc6Joz+OFA+A=
+			8uWBLSWYHvy82Vr53fl3wh36rVU=
 			</data>
 			<key>hash2</key>
 			<data>
-			tzB6tq7yAse5w8LcZGa3pfjEsszml06VWPSEK//Ikxs=
+			zkO1W50LpmcK+IQ+zUbmtlU1A7tYNZlv01oH5HPDQHA=
 			</data>
 		</dict>
 		<key>Headers/HDCoverageSFramework.h</key>
@@ -88,66 +88,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ml8I2fQwMB2BKiPqnToNogWXo/I=
+			BoItCiE04AROUBYKxJd9Tih/uRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPRHK4qCHNdVDPJaV5w5OM36XsHLLX3ve3r97wfLCn0=
+			V0DL+MDrUakK7vCjthSoU5Wums9tXzlIqTRjfhvum10=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ml8I2fQwMB2BKiPqnToNogWXo/I=
+			BoItCiE04AROUBYKxJd9Tih/uRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPRHK4qCHNdVDPJaV5w5OM36XsHLLX3ve3r97wfLCn0=
+			V0DL+MDrUakK7vCjthSoU5Wums9tXzlIqTRjfhvum10=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C0/MXNh22MW04sU3MJq4qCuqOOU=
+			0XLqGI3REHV6ye8IdDVpeyNLqZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eb3a7geb4CaPSSMdMTA40KohBMuPTVZSqYdSGt8s+10=
+			U2/bzTSf+J+jaBr3TyqqywpTDwnVnbDdWS/UqMWTF7Q=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SlUSOwBZMLcUaOgApcAGEUIn3xY=
+			bWsZAGkllfnTxkpw/IDODdU1ZCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kFRO8Vx/XxoZsxvbIwISCaHLQsJOSyLeWljHn+rJg5o=
+			zymkxG8CQ1Pf67Qk+En9hSRBMo+RQ4tcFoDDngJ2xNU=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C0/MXNh22MW04sU3MJq4qCuqOOU=
+			0XLqGI3REHV6ye8IdDVpeyNLqZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eb3a7geb4CaPSSMdMTA40KohBMuPTVZSqYdSGt8s+10=
+			U2/bzTSf+J+jaBr3TyqqywpTDwnVnbDdWS/UqMWTF7Q=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SlUSOwBZMLcUaOgApcAGEUIn3xY=
+			bWsZAGkllfnTxkpw/IDODdU1ZCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kFRO8Vx/XxoZsxvbIwISCaHLQsJOSyLeWljHn+rJg5o=
+			zymkxG8CQ1Pf67Qk+En9hSRBMo+RQ4tcFoDDngJ2xNU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
