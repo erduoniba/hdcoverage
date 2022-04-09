@@ -37,6 +37,5 @@ Carthage/Build
 # Pods/
 
 # 代码覆盖率相关文件
-Example/CoverageResult/*
 Example/CoverageResult/
 
