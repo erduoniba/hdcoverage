@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
                       1.0.9: add $OTHER_LDFLAGS value
                       1.1.0: support gather code coverage
                       1.1.1: support use Cocoapods Dynamic Library demo
+                      1.1.2: rsolve the issue of multi computer build coverage exceptions
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/hdcoverage'
