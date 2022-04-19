@@ -615,8 +615,59 @@ $ tree -L 3
 
 
 
-## 四、参考
+## 四、一些问题
+
+#### **1、点击查看具体类的代码覆盖率数据提示不存在**
+
+```
+{
+"code": 404,
+"msg": "Not exists"
+}
+```
+
+查看路径地址是打包机上的路径。这个是因为生成最终产物需要 `profdata` 、`插桩的o`  及`源码`三个要素，往往在自己打包，自己生成没有问题，因为自动关联了本地的路径，可以通过 `__LLVM_COV` 进行查看。
+
+**解决方案：**
+
+路径映射:  `llvm-cov -path-equivalence=A,B`  
+
+A：为打包机的源码地址；B：为本地源码地址
+
+完整的脚本：
+
+```sh
+$ xcrun llvm-cov show -instr-profile=jx.profdata -format=html -output-dir=result -use-color jx.o -path-equivalence=/Users/denglibing/HDProject/JDSpace/CodeProject/pgIntroductionModule/pgIntroductionModule/,/Users/denglibing/Desktop/Coverage0408/pgIntroductionModule/pgIntroductionModule/
+```
+
+
+
+#### 2、增量覆盖率
+
+使用 `LLVM-COV` 生成代码覆盖率，兼容 `Swift` 
+
+为了实现 Swift 的增量代码覆盖率，需要使用 `LLVM-COV` 和 `GCC` 共同完成；
+
+这里也存在路径映射的问题
+
+**解决方案：**
+
+```sh
+# 增量覆盖率需要使用 gcc 的工具来，profdata to info
+$ xcrun llvm-cov export jx.o -instr-profile=jx.profdata -format=lcov > coverage_info.info
+
+# 替换 coverage_info.info中SF的路径为本地源码路径,解决多设备代码覆盖率异常问题
+ruby diffUtils/changeSourcePath.rb --build-source-path=/Users/denglibing/HDProject/JDSpace/CodeProject/pgIntroductionModule/pgIntroductionModule --local-source-path=/Users/denglibing/Desktop/Coverage0408/pgIntroductionModule --coverage-info-file=/Users/denglibing/Desktop/Coverage0408/coverage_info.info
+```
+
+具体实现可以查看 [**changeSourcePath.rb** ](https://github.com/erduoniba/hdcoverage/blob/master/HDCoverage/GitdiffUtils/changeSourcePath.rb)
+
+
+
+## 五、参考
 
 [获取git增量代码数据](https://blog.jerrychu.top/2020/06/07/%E8%8E%B7%E5%8F%96git%E5%A2%9E%E9%87%8F%E4%BB%A3%E7%A0%81%E6%95%B0%E6%8D%AE/) ： 提供非常详细的git增量代码说明和脚本，非常赞
+
+[深入理解 Swift 代码覆盖率](https://juejin.cn/post/6996596951969955853) ：文章涉及的面很广，细节也抓的非常深，值得反复阅读
 
  
