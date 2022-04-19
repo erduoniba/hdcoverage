@@ -79,12 +79,14 @@ function disposeProfrawToHtmlByGenhtml {
 function disposeGitDiff {
     # 生成原始的diff文件
     diff_file=$gitDiffs/$1.diff
+    # 这里也可以通过tag来diff
+    # git diff tag1 tag2 --unified=0 > $diff_file
     git diff $1 $2 --unified=0 > $diff_file
     echo "diff_file: $diff_file"
     echo "coverage_info_file: $3"
     # 提取可用（json化）的diff文件，根据原始info文件，重新生成增量的info数据
-    ruby $gitdiffUtils/utils/diffParser.rb --diff-file=$diff_file --coverage-info-file=$3
+    ruby $gitdiffUtils/diffParser.rb --diff-file=$diff_file --coverage-info-file=$3
 }
 
-# 第一、二个参数为git commitid
+# 第一、二个参数为git的commitid
 main $1 $2

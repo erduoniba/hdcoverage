@@ -1,5 +1,5 @@
 require 'json'
-require_relative '../trollop'
+require_relative 'trollop'
 
 module GitUtil
     def white_adpator(line, white_list)
