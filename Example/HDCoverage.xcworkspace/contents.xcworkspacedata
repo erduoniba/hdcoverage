@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/HDCoverageDemo.xcodeproj">
+      location = "group:/Users/denglibing/HDProject/HarryProject/iOS/hdcoverage/Example/HDCoverage.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HDCoverage.xcodeproj">
    </FileRef>
 </Workspace>
