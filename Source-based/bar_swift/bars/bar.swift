@@ -36,12 +36,12 @@ swiftc barswift -o bar_no_coverage
 /bar_coverage
 
 // 生成执行的代码数据
-xcrun llvm-profdata merge -sparse defaultprofraw -o bar_coverageprofdata
+xcrun llvm-profdata merge -sparse default.profraw -o bar_coverage.profdata
 
 # 查看profdata数据
 xcrun llvm-profdata show -all-functions -instr bar_coverageprofdata > bar_coverage_profdatatext
 
 # 导出为html
-xcrun llvm-cov show /bar_coverage -instr-profile=bar_coverageprofdata -use-color -format=html -output-dir bar_coverage_html
+xcrun llvm-cov show ./bar_coverage -instr-profile=bar_coverage.profdata -use-color -format=html -output-dir bar_coverage_html
 */
 
