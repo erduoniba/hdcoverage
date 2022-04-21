@@ -19,17 +19,19 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named: "off_demo")
         view.addSubview(imageView)
         view.insertSubview(imageView, at: 0)
-    }
-
-    
-    @IBAction func projectOCAction(_ sender: UIButton) {
-        HDOC.projectOCAction(sender.tag)
         
         AFHTTPSessionManager().get("https://api.github.com/users", parameters: nil, headers: nil, progress: nil) { (_, response) in
             debugPrint("response: \(String(describing: response))")
         } failure: { (_, _) in
             
         }
+    }
+
+    
+    @IBAction func projectOCAction(_ sender: UIButton) {
+        HDOC.projectOCAction(sender.tag)
+        
+        
     }
     
     @IBAction func projectSwiftAction(_ sender: UIButton) {

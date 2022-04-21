@@ -16,7 +16,7 @@ function main {
     copyIpaAndShellFile
     generateMergeO
     
-    open $resulePath
+#    open $resulePath
     
     hecho "macho & hd_parse_profraw.sh & gitdiff copy end"
     echo "\n"
@@ -74,7 +74,7 @@ function read_dir {
         else
             filePath=$1"/"$file
             hecho "read_dir filePath $filePath"
-            # 判断后缀是.m或者.swift文件
+            # 判断后缀是.o文件
             if [[ "${filePath##*.}"x = "o"x ]]; then
                 hecho "macho_filePath $filePath generateMergeOFiles: $generateMergeOFiles"
                 cp -r $filePath $generateMergeOFiles
@@ -85,6 +85,7 @@ function read_dir {
 
 function generateMergeO {
     # 将编译插桩后的目标文件generateMergeOFiles目录
+    hecho "PROJECT_TEMP_ROOT: $PROJECT_TEMP_ROOT"
     read_dir $PROJECT_TEMP_ROOT
     # https://stackoverflow.com/questions/66245096/xcrun-llvm-cov-show-no-coverage-data-found
     # 将多个目标文件手动链接然后生成组合目标文件

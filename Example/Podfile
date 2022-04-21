@@ -14,7 +14,7 @@ require 'xcodeproj'
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      if(config.name <=> 'Release') == 0
+      if ((config.name <=> 'Release') == 0 || (config.name <=> 'Debug') == 0)
         config.build_settings['OTHER_CFLAGS'] = '$(inherited)'
         config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited)'
         config.build_settings['OTHER_LDFLAGS'] = '$(inherited)'
