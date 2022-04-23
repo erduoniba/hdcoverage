@@ -923,7 +923,7 @@
 					"$(inherited)",
 					"-fprofile-instr-generate",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -profile-generate -profile-coverage-mapping";
+				OTHER_SWIFT_FLAGS = "-profile-generate -profile-coverage-mapping";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.toolbardemo.HDCoverageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -977,7 +977,7 @@
 					"$(inherited)",
 					"-fprofile-instr-generate",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -profile-generate -profile-coverage-mapping";
+				OTHER_SWIFT_FLAGS = "-profile-generate -profile-coverage-mapping";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ataraxia.zither;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = zitherAdhoc;

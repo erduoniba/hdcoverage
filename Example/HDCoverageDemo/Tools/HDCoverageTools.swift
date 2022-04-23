@@ -10,7 +10,6 @@ import Foundation
 class HDCoverageTools: NSObject {
     static var shared = HDCoverageTools()
  
-    // 注意：动态库是需要单独注册，并且需要在动态库中执行__llvm_profile_write_file()
     func registerCoverage(moduleName: String) {
         let name = "\(moduleName).profraw"
         print("registerCoverage, moduleName: \(moduleName)")
@@ -23,11 +22,12 @@ class HDCoverageTools: NSObject {
         } catch {
             print(error)
         }
-        saveAndUpload()
+//        saveAndUpload()
     }
     
     // 合适的时机代码覆盖率上报
     func saveAndUpload() {
         __llvm_profile_write_file()
+        debugPrint("HDCoverageTools.shared.saveAndUpload")
     }
 }
