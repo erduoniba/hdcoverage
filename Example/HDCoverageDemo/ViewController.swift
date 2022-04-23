@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         view.insertSubview(imageView, at: 0)
         
         AFHTTPSessionManager().get("https://api.github.com/users", parameters: nil, headers: nil, progress: nil) { (_, response) in
-            debugPrint("response: \(String(describing: response))")
+//            debugPrint("response: \(String(describing: response))")
         } failure: { (_, _) in
             
         }
