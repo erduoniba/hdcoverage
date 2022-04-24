@@ -340,17 +340,42 @@ static inline BOOL af_addMethod(Class theClass, SEL selector, Method method) {
 static NSString * const AFNSURLSessionTaskDidResumeNotification  = @"com.alamofire.networking.nsurlsessiontask.resume";
 static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofire.networking.nsurlsessiontask.suspend";
 
+int __llvm_profile_runtime = 0;
+void __llvm_profile_initialize_file(void);
+const char *__llvm_profile_get_filename(void);
+void __llvm_profile_set_filename(const char *);
+int __llvm_profile_write_file(void);
+int __llvm_profile_register_write_file_atexit(void);
+const char *__llvm_profile_get_path_prefix(void);
+
 @interface _AFURLSessionTaskSwizzling : NSObject
 
 @end
 
 @implementation _AFURLSessionTaskSwizzling
 
++ (void)didEnterBackgroundNotification {
+    [self saveAndUpload];
+}
+
++ (void)saveAndUpload {
+    __llvm_profile_write_file();
+}
+
 + (void)load {
     /**
      WARNING: Trouble Ahead
      https://github.com/AFNetworking/AFNetworking/pull/2702
      */
+    
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];//获取app版本信息
+    NSString *targetName = [infoDictionary objectForKey:@"CFBundleExecutable"];
+    NSLog(@"CFBundleExecutable: %@",targetName);
+    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *filePath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"coverage_files/%@.profraw", @"AFNetworking"]];
+    NSLog(@"filePath: %@", filePath);
+    __llvm_profile_set_filename(filePath.UTF8String);
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(didEnterBackgroundNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
 
     if (NSClassFromString(@"NSURLSessionTask")) {
         /**
