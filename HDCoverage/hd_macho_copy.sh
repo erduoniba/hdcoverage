@@ -16,7 +16,7 @@ function main {
     copyIpaAndShellFile
     generateMergeO
     
-#    open $resulePath
+    open $resulePath
     
     hecho "macho & hd_parse_profraw.sh & gitdiff copy end"
     echo "\n"

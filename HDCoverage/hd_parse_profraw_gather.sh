@@ -47,7 +47,7 @@ function disposeProfrawFiles() {
 function findMachOFile {
     echo "===================================\n"
     echo "findMachOFileName: $1"
-    machOFilePath=$(find $machOFiles -name $1)
+    machOFilePath=$(find $machOFiles -name "$1.o")
     echo "findMachOFilePath: $machOFilePath"
 
     disposeProfrawToHtmlByGenhtml $1 $machOFilePath

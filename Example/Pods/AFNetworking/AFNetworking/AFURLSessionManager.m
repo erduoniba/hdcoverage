@@ -368,14 +368,14 @@ const char *__llvm_profile_get_path_prefix(void);
      https://github.com/AFNetworking/AFNetworking/pull/2702
      */
     
-    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];//获取app版本信息
-    NSString *targetName = [infoDictionary objectForKey:@"CFBundleExecutable"];
-    NSLog(@"CFBundleExecutable: %@",targetName);
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"coverage_files/%@.profraw", @"AFNetworking"]];
-    NSLog(@"filePath: %@", filePath);
-    __llvm_profile_set_filename(filePath.UTF8String);
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(didEnterBackgroundNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
+//    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];//获取app版本信息
+//    NSString *targetName = [infoDictionary objectForKey:@"CFBundleExecutable"];
+//    NSLog(@"CFBundleExecutable: %@",targetName);
+//    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+//    NSString *filePath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"coverage_files/%@.profraw", @"AFNetworking"]];
+//    NSLog(@"filePath: %@", filePath);
+//    __llvm_profile_set_filename(filePath.UTF8String);
+//    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(didEnterBackgroundNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
 
     if (NSClassFromString(@"NSURLSessionTask")) {
         /**

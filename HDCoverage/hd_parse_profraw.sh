@@ -41,7 +41,7 @@ function disposeProfrawFiles() {
 function findMachOFile {
     echo "===================================\n"
     echo "findMachOFileName: $1"
-    machOFilePath=$(find $machOFiles -name $1)
+    machOFilePath=$(find $machOFiles -name "$1.o")
     echo "findMachOFilePath: $machOFilePath"
 
     disposeProfrawToHtmlByLlvmcov $1 $machOFilePath
@@ -54,8 +54,8 @@ function disposeProfrawToHtmlByLlvmcov {
     xcrun llvm-profdata show -all-functions -instr $profraws/$1.profdata -o profdata.info
 
     if [ $? -eq 0 ]; then
-#        xcrun llvm-cov show $2 -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
-        xcrun llvm-cov show $machOFiles/$1.o -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
+        xcrun llvm-cov show $2 -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
+#        xcrun llvm-cov show $machOFiles/$1.o -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1
         
         # 目标文件转移脚本，用于其他设备生成代码覆盖率
         # https://releases.llvm.org/9.0.0/docs/CommandGuide/llvm-cov.html#llvm-cov-show
