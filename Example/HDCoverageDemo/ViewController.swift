@@ -25,6 +25,20 @@ class ViewController: UIViewController {
         } failure: { (_, _) in
             
         }
+        
+        let button = UIButton()
+        button.frame = CGRect(x: 100, y: 210, width: 50, height: 50)
+        view.addSubview(button)
+        let url = URL(string: "http://storage.360buyimg.com/i.imageUpload/3239373335393132375f6d31363232393537363439363237_mid.jpg")!
+        button.jx.setImage(url: url, state: .normal, options: [])
+        
+        let imageView2 = UIImageView()
+        
+        imageView2.jx.setImage(url: url, placeholder: nil, options: [.webpEnable(true)]) { result in
+            print("compeltion")
+        }
+        
+        view.addSubview(imageView2)
     }
 
     

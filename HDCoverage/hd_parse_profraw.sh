@@ -52,6 +52,9 @@ function disposeProfrawToHtmlByLlvmcov {
     echo "disposeProfrawToHtmlByLlvmcov, machoFileName: $1 machOFilePath: $2"
     xcrun llvm-profdata merge -sparse $profraws/$1.profraw -o $profraws/$1.profdata
     xcrun llvm-profdata show -all-functions -instr $profraws/$1.profdata -o profdata.info
+    
+    # profdata to info
+    xcrun llvm-cov export $2 -instr-profile=$profraws/$1.profdata -format=lcov > profdata.lcov
 
     if [ $? -eq 0 ]; then
         xcrun llvm-cov show $2 -instr-profile=$profraws/$1.profdata -use-color -format=html -output-dir $result/$1

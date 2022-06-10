@@ -7,3 +7,8 @@
 #import <HDCoverageFramework/HDOCFramework.h>
 #import <HDCoverageSFramework/HDCoverageSFramework.h>
 #import <AFNetworking/AFNetworking.h>
+
+
+#import "UIButton+PGWeb.h"
+#import "UIImageView+PGWeb.h"
+#import "SDAnimatedImageView.h"
