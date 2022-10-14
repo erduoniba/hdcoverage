@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         }
         
         let button = UIButton()
-        button.frame = CGRect(x: 100, y: 210, width: 50, height: 50)
+        button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         view.addSubview(button)
         let url = URL(string: "http://storage.360buyimg.com/i.imageUpload/3239373335393132375f6d31363232393537363439363237_mid.jpg")!
         button.jx.setImage(url: url, state: .normal, options: [])

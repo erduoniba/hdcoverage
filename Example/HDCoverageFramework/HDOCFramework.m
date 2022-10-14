@@ -26,10 +26,10 @@
             NSLog(@"frameworkOCAction: new line random() %% 2 = 1");
         }
     }
-    NSDictionary * envir = [[NSProcessInfo processInfo] environment];
-    NSLog(@"envir : %@", envir);
+//    NSDictionary * envir = [[NSProcessInfo processInfo] environment];
+//    NSLog(@"envir : %@", envir);
     
-    NSLog(@"Target name: %@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]);
+//    NSLog(@"Target name: %@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]);
 }
 
 @end

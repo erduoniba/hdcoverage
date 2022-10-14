@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C76B2C24555648130B9ACFC /* HDGatherCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE6391689F3D023597ADF4B /* HDGatherCoverage.m */; };
 		5E241D6822E308FF4638205F /* Pods_HDCoverageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05689C74B466C426BE3A9F6 /* Pods_HDCoverageDemo.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D9006153272D373800F7B46D /* HDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9006151272D373800F7B46D /* HDSwift.swift */; };
@@ -315,8 +314,6 @@
 		D9F0670627253A3400E77D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9F0670827253A3400E77D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F0670F27253A7000E77D7A /* pod_release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = pod_release.sh; path = ../../../pod_release.sh; sourceTree = "<group>"; };
-		F6BCC2667AD1F71ACFB29D03 /* HDGatherCoverage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HDGatherCoverage.h; sourceTree = "<group>"; };
-		FDE6391689F3D023597ADF4B /* HDGatherCoverage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HDGatherCoverage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,11 +433,9 @@
 		D4DD55FCC6A0EEDE1722D181 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F6BCC2667AD1F71ACFB29D03 /* HDGatherCoverage.h */,
-				FDE6391689F3D023597ADF4B /* HDGatherCoverage.m */,
 			);
 			name = Classes;
-			path = ../HDCoverage/Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D900614F272D373800F7B46D /* CoverageTest */ = {
@@ -1071,7 +1066,6 @@
 				D9C468A82853294600E75ABB /* SDDeviceHelper.m in Sources */,
 				D9C467EF2853294500E75ABB /* UIImageView+HighlightedWebCache.m in Sources */,
 				D9F066FD27253A3100E77D7A /* SceneDelegate.swift in Sources */,
-				3C76B2C24555648130B9ACFC /* HDGatherCoverage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
