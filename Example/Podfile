@@ -65,7 +65,7 @@ post_install do |installer|
         #创建工程目录,没有可以创建
         mapiGroup.set_source_tree('<group>')
         #源,相对于.xcodeproj路径,提供给项目实体文件的路径
-        mapiGroup.set_path("Classes")
+        mapiGroup.set_path("../HDCoverage/Classes")
 
 
         #移除索引

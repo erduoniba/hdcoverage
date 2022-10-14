@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - HDCoverage (1.1.2)
+  - HDCoverage (1.1.3)
 
 DEPENDENCIES:
   - AFNetworking
@@ -30,8 +30,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  HDCoverage: 080f29eac74b6fd286c0c15043e17e25735585df
+  HDCoverage: ebca8fb7be3de978b3b7a0fb87e1fbb46a529b65
 
-PODFILE CHECKSUM: 4beeeb1da34c97346b60fc4b8f9146b6ab766252
+PODFILE CHECKSUM: 493fc9a2ea7aba5bae67320fa00d6425076a4666
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3
