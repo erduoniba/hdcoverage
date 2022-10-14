@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HDCoverage'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic'
   s.description      = <<-DESC
                       Swift&OC Coverage Shell, Set Build-Settings and Copy MachO file, let work automatic
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
                       1.1.1: support use Cocoapods Dynamic Library demo
                       1.1.2: rsolve the issue of multi computer build coverage exceptions
                       1.1.3: support block code coverage, fix .o bug
+                      1.1.4: fix `pod install` error
                        DESC
 
   s.homepage         = 'https://github.com/erduoniba/hdcoverage'
