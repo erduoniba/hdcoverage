@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/HDCoverageSFramework-Swift.h</key>
 		<data>
-		8uWBLSWYHvy82Vr53fl3wh36rVU=
+		Py4Rupx4EUpX+wfbp/AHHd2rog4=
 		</data>
 		<key>Headers/HDCoverageSFramework.h</key>
 		<data>
@@ -18,35 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L10gOWvy85S7SIcgd11qluiGETM=
+		isLm9sw5y47Mt8BgqRQFCmv1x4I=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Z2lTjyt+/P7NmoTIuRRPDC9/ofo=
+		L+saTdVH8CIusXPrFIcoDd/evTU=
 		</data>
-		<key>Modules/HDCoverageSFramework.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z2lTjyt+/P7NmoTIuRRPDC9/ofo=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OvMKQCNEmcHp5ySOgPmk0NwcpAw=
+		yUGZ0ZkQle2jBmWrKGvVwzQBgv0=
 		</data>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lWRFhj5Ybjxc8CRxzUoI2SGW6DM=
-		</data>
-		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		OvMKQCNEmcHp5ySOgPmk0NwcpAw=
-		</data>
-		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		lWRFhj5Ybjxc8CRxzUoI2SGW6DM=
+		JlVKPS+L8ri4XiUk2HUfIRHe2IM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		3FRIy28gz7BdBIYAu4cAqTUVRsw=
+		lkBExgP8D+yMUDv5jxatnUAZ4rI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,11 +47,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8uWBLSWYHvy82Vr53fl3wh36rVU=
+			Py4Rupx4EUpX+wfbp/AHHd2rog4=
 			</data>
 			<key>hash2</key>
 			<data>
-			zkO1W50LpmcK+IQ+zUbmtlU1A7tYNZlv01oH5HPDQHA=
+			/PmgePn4XnTKHTUfBrz0EvGapu8OdXn/hiykgxLkyIY=
 			</data>
 		</dict>
 		<key>Headers/HDCoverageSFramework.h</key>
@@ -88,77 +80,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z2lTjyt+/P7NmoTIuRRPDC9/ofo=
+			L+saTdVH8CIusXPrFIcoDd/evTU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ltdu8zqQUGUFww6uaQKJHDLiB0dNZ3cp3rTiKau2/gA=
+			MiqQacd88+h+aZE2u0xkW9F9Azs4II3polJu5ikBeqA=
 			</data>
 		</dict>
-		<key>Modules/HDCoverageSFramework.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z2lTjyt+/P7NmoTIuRRPDC9/ofo=
+			FSPnLbho3G+LL9smI3XgVOqBIQ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ltdu8zqQUGUFww6uaQKJHDLiB0dNZ3cp3rTiKau2/gA=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OvMKQCNEmcHp5ySOgPmk0NwcpAw=
+			yUGZ0ZkQle2jBmWrKGvVwzQBgv0=
 			</data>
 			<key>hash2</key>
 			<data>
-			nqLpqqjvu9Vde4kPOqgII9F4jc3LwRHkNN5E/+OWfyo=
+			GosOFYudn7CYBbf+6ddCV6rqXmInnlI5VutfPEqG4O8=
 			</data>
 		</dict>
 		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lWRFhj5Ybjxc8CRxzUoI2SGW6DM=
+			JlVKPS+L8ri4XiUk2HUfIRHe2IM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aoqigeZTAK7IfFWFQIMEWLoTJdQOTcLplFwq4MSGdDY=
-			</data>
-		</dict>
-		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OvMKQCNEmcHp5ySOgPmk0NwcpAw=
-			</data>
-			<key>hash2</key>
-			<data>
-			nqLpqqjvu9Vde4kPOqgII9F4jc3LwRHkNN5E/+OWfyo=
-			</data>
-		</dict>
-		<key>Modules/HDCoverageSFramework.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lWRFhj5Ybjxc8CRxzUoI2SGW6DM=
-			</data>
-			<key>hash2</key>
-			<data>
-			aoqigeZTAK7IfFWFQIMEWLoTJdQOTcLplFwq4MSGdDY=
+			kMnZp3pIQMRWbQ9QTnfHlDo20xFTIxv+ej0ElXdgpvA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3FRIy28gz7BdBIYAu4cAqTUVRsw=
+			lkBExgP8D+yMUDv5jxatnUAZ4rI=
 			</data>
 			<key>hash2</key>
 			<data>
-			XfhKoHWsvXHDruujNCzyaJzIr8HyBat07XkH1N66/5E=
+			RRos3SshSQB+d1gqFtCyeW+73IkBvwEafx9/HVtcebA=
 			</data>
 		</dict>
 	</dict>

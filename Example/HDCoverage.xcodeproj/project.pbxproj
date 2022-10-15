@@ -372,7 +372,6 @@
 				607FACD11AFB9204008FA782 /* Products */,
 				4B2741E9BBC3784CD7A4CEFF /* Pods */,
 				EAD93ACEEED80BB9E51CB6D1 /* Frameworks */,
-				CF7AC4E1950C0BAA0EA4A1EE /* .. */,
 			);
 			sourceTree = "<group>";
 		};
@@ -412,30 +411,6 @@
 				C042F22888F87C062F62C79F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		911FDE604B21FD4E640A25A8 /* HDCoverage */ = {
-			isa = PBXGroup;
-			children = (
-				D4DD55FCC6A0EEDE1722D181 /* Classes */,
-			);
-			name = HDCoverage;
-			sourceTree = "<group>";
-		};
-		CF7AC4E1950C0BAA0EA4A1EE /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				911FDE604B21FD4E640A25A8 /* HDCoverage */,
-			);
-			name = ..;
-			sourceTree = "<group>";
-		};
-		D4DD55FCC6A0EEDE1722D181 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		D900614F272D373800F7B46D /* CoverageTest */ = {
@@ -1224,7 +1199,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDCoverage_Example.app/HDCoverage_Example";
 			};
 			name = Debug;
@@ -1241,7 +1216,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDCoverage_Example.app/HDCoverage_Example";
 			};
 			name = Release;

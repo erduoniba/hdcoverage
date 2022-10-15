@@ -6,6 +6,6 @@ framework module HDCoverageSFramework {
 }
 
 module HDCoverageSFramework.Swift {
-    header "HDCoverageSFramework-Swift.h"
-    requires objc
+  header "HDCoverageSFramework-Swift.h"
+  requires objc
 }
